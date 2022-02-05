@@ -1,0 +1,87 @@
+.candidates-list {
+  margin-top: 20px;
+
+  .candidate-card {
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border-radius: 0;
+    background-color: $light-pink-color;
+    border: none;
+
+    &:hover {
+      background-color: $primary-pink;
+    }
+
+    .candidate-img {
+      width: 25%;
+
+      img {
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 50%;
+        margin-left: 15px;
+      }
+    }
+
+    .candidate-info {
+      display: flex;
+      flex-direction: column;
+
+      .candidate-basic-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .candidate-name {
+          display: flex;
+          flex-direction: row;
+
+          .name {
+            font-family: $primary-font;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 25.06px;
+          }
+
+          .starred {
+            margin-left: 30px;
+          }
+        }
+
+        .candidate-location {
+          font-family: $secondary-font;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 25.06px;
+        }
+      }
+
+      .candidate-personalvalues {
+        margin-top: 15px;
+        font-family: $secondary-font;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23.34px;
+      }
+    }
+
+    .message {
+      width: 25%;
+
+      .message-button {
+        margin-left: 20%;
+        margin-top: 30px;
+        width: 70%;
+        border-radius: 2px;
+        background: none;
+        border: 1px solid $dark-pink;
+        color: $dark-pink;
+        font-family: $secondary-font !important;
+        text-transform: capitalize;
+        @extend Button;
+      }
+    }
+  }
+}

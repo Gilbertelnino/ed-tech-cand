@@ -1,0 +1,527 @@
+.company-body-wrapper {
+
+  .inner-tab-container {
+    .candidate-tab-wrapper {
+      margin: 0px 0px 35px 0px !important;
+
+      .candidate-search-wrapper{
+        margin-right: 0px !important;
+      }
+    }
+    .custom-tab-wrapper{
+      margin: 0px 0px 35px 0px !important;
+    }
+  }
+
+  .navigation-tabs {
+    min-width: 345px !important;
+
+    .MuiTabs-flexContainer {
+
+      .MuiTab-labelIcon {
+        .MuiTab-wrapper {
+          font-size: 18px;
+        }
+      }
+
+      .Mui-selected {
+        background: $white;
+        border: 1px solid $gray-110;
+        box-shadow: 0px 2px 48px rgba(0,0, 0, 0.06);
+        border-radius: 4px;
+        margin-left: 10px;
+        min-width: 93%;
+
+        .MuiTab-wrapper {
+          color: $dark-pink;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: flex-start;
+          padding-left: 20px !important;
+
+          svg {
+            padding-right: 15px;
+            padding-top: 3px;
+            color: $dark-pink;
+          }
+        }
+      }
+
+      button[class="MuiButtonBase-root MuiTab-root MuiTab-textColorInherit MuiTab-labelIcon"] {
+        min-width: 93%;
+        padding: 10px 0px;
+        margin-top: 10px;
+        min-width: 100%;
+        background-color: $white;
+
+        .MuiTab-wrapper {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: flex-start;
+          padding-left: 43px;
+
+          svg {
+            padding-right: 15px;
+            padding-top: 3px;
+            color: $dark-pink;
+          }
+        }
+      }
+
+      button[id="vertical-tab-6"] {
+        position: absolute;
+        bottom: 40px;
+      }
+    }
+
+    .PrivateTabIndicator-vertical-4 {
+      display: none;
+    }
+  }
+
+  .tab-container {
+
+    .inner-navigation-tabs {
+
+      .tab-action-button-wrapper {
+        background-color: $white;
+        border-radius: 4px;
+        height: 70px;
+        border: 1px solid $gray-110;
+        box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
+      }
+
+      .tab-inner-wrap {
+        position: relative;
+        bottom: 12px;
+        left: 15px;
+
+        .Mui-selected {
+          
+          .MuiTab-wrapper {
+            font-style: normal;
+            color: $white !important;
+            background: $dark-pink;
+            height: 40px;
+            border-radius: 4px;
+          }
+        }
+
+        .MuiTab-textColorInherit {
+
+          .MuiTab-wrapper {
+            font: $primary-font;
+            color: $purple-900;
+            font-weight: 500;
+            font-style: normal;
+            font-size: $font-md; 
+            line-height: 18.77px;
+            padding: 0 10px;
+          }
+        }
+
+        .MuiTabs-indicator {
+          display: none;
+        }
+
+        .MuiTouchRipple-root {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .company-candidates {
+    margin-top: 20px;
+    
+    .candidate-preview {
+      display: flex;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      background-color: $white;
+      &:hover {
+        background-color: $pink-250;
+        cursor: default;
+      }
+      box-shadow: 0px 8px 42px rgba(201, 209, 228, 0.28);
+      @media only screen and (max-width: 1024px) {
+        flex-wrap: wrap !important;
+      }
+      .user-image {
+        position: relative;
+        height: 85px !important;
+        flex-basis: 6%;
+        margin: 15px 0 15px 10px;
+        .user-avatar-md {
+          height: 85px !important;
+          width: 85px !important;
+        }
+      }
+
+      .play-icon {
+        position: relative;
+        top: -25px;
+        right: -55px;
+        color: $dark-pink;
+        font-size: 32px;
+      }
+
+      .user-detail-preview {
+        .user-heading {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          @media only screen and (max-width: 1024px) {
+            flex-wrap: wrap;
+          }
+          .MuiBox-root {
+            display: flex;
+            align-items: center;
+            .user-name {
+              font-family: $primary-font;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 25px;
+              letter-spacing: 0px;
+              text-align: left;
+            }
+
+            .filled-star {
+              margin-bottom: -3px;
+            }
+            .fav-star-icon {
+              margin: 0 20px 0 10px;
+            }
+            label {
+              font-family: $primary-font;
+              font-size: 12px;
+              padding: 2px 10px;
+              background-color: $primary-accent;
+              color: $white;
+              border-radius: 3px;
+              margin-right: 18px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+
+          .candidate-info-cluster {
+            position: relative;
+            top: 11px;
+          }
+
+          .user-location {
+            font-family: $primary-font;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23px;
+            letter-spacing: 0px;
+            text-align: left;
+            position: relative;
+            left: 110px;
+            padding: 22px 0 28px 0;
+            @media only screen and (max-width: 1024px) {
+              margin-top: 5px;
+            }
+          }
+
+          label {
+            margin-bottom: 0px;
+          }
+        }
+
+        .user-values {
+          font-family: $secondary-font;
+          color: $black;
+          font-size: 16px;
+          display: flex;
+          position: relative;
+          top: -3px;
+
+          .user-values-dot {
+            margin: 2px 4px 0 0;
+          }
+
+          .d-block {
+            font-size: 11px;
+            padding-right: 25px;
+
+            span {
+              color: $dark-pink;
+            }
+          }
+
+          span[class="d-block mt-2"] {
+            margin-top: 0px !important;
+            font-size: 11px;
+            padding-right: 20px;
+
+            span {
+              color: $dark-pink;
+            }
+          }
+        }
+
+        button.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.btn.btn-transparent.message-button.MuiButton-outlinedPrimary {
+          width: auto;
+          height: 21px;
+          font-family: $secondary-font;
+          font-size: 14px;
+        }
+        @media only screen and (max-width: 1024px) {
+          margin: 15px 0;
+        }
+      }
+      button.btn-primary {
+        min-width: 130px !important;
+      }
+      .message {
+        display: flex;
+        align-items: center;
+        position: relative;
+        right: 20px;
+        top: 14px;
+        .btn-small-transparant {
+          height: 36px !important;
+          width: 130px !important;
+          background-color: transparent !important;
+          &:hover {
+            background: $dark-pink !important;
+
+            .MuiButton-label {
+              color: $white !important;
+              font-weight: 600;
+            }
+          }
+        }
+        @media only screen and (max-width: 1024px) {
+          margin-left: 0;
+        }
+      }
+
+      .more-icon {
+        border-left: 1px solid $gray-130;
+        height: auto;
+        display: flex;
+        padding: 25px;  
+      }
+    }
+
+    .pagination-candidate {
+      bottom: 0;
+      margin-top: 10px;
+      justify-content: center;
+    }
+
+    .candidate-rejected {
+      background-color: $white !important;
+      color: $rejected-blue !important;
+      border: 1px solid $rejected-blue;
+      width: 65px;
+      height: 20px;
+    }
+
+    .candidate-contacted {
+      background-color: $white !important;
+      color: $dark-pink !important;
+      border: 1px solid $dark-pink;
+      width: 65px;
+      height: 20px;
+    }
+
+    .candidate-qualified {
+      background-color: $white !important;
+      color: $dark-pink !important;
+      border: 1px solid $dark-pink;
+      width: 65px;
+      height: 20px;
+    }
+
+    .candidate-screening {
+      background-color: $white !important;
+      color: $dark-pink !important;
+      border: 1px solid $dark-pink;
+      width: 65px;
+      height: 20px;
+    }
+
+    .candidate-hired {
+      background-color: $white !important;
+      color: $hired-green !important;
+      border: 1px solid $hired-green;
+      width: 65px;
+      height: 20px;
+    }
+  }
+  .shadow-box{
+    padding: 25px;
+  }
+}
+
+.modal-body-container {
+  &.modal-large.profile-modal {
+    height: 470px;
+    overflow-y: auto;
+    border: none;
+  }
+}
+.candidate-modal-wrap{
+  overflow: auto;
+  min-height: 600px;
+  max-height: 600px;
+  overflow-x: hidden;
+  padding: 0 15px !important;
+  .profile-view-wrapper{
+    .general-info {
+      margin-bottom: 20px;
+      margin: 0 -15px;
+    }
+  } 
+}
+
+.modal-body-container {
+  &.modal-medium.reject-modal {
+    width: 650px !important;
+    height: 462px !important;
+    padding: 0px !important;
+    @media only screen and (max-width: 575px) {
+      padding: 20px 15px;
+    }
+    h6.feedback-heading {
+      font-size: 22px !important;
+      font-weight: 500;
+      line-height: 18px;
+      padding: 26px !important;
+      border-bottom: 1px solid $gray-110;
+    }
+
+    .close-icon {
+      top: 19px;
+      right: 20px;
+      width: 35px;
+      height: 35px;
+      color: $gray-550;
+    }
+
+    h6.feedback-subheading {
+      font-size: 18px;
+      font-weight: 500;
+      margin-top: 20px;
+      line-height: 20px;
+      padding-left: 26px;
+      .rejected-name {
+        color: $dark-pink;
+        text-transform: capitalize !important;
+      }
+    }
+    p.feedback-requirements {
+      margin: 8px 0 15px 26px;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 18px;
+      color: $gray-550;
+    }
+
+    label[class="required"] {
+      font-style: normal;
+      font-weight: 500 !important;
+      font-size: 15px !important;
+      font-family: $primary-font !important;
+      line-height: 18px;
+      color: $purple-900 !important;
+      padding-left: 26px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+
+    .letter-count {
+      float: right;
+      border: 1px solid $light-gray-color;
+      color: $light-gray-color;
+      margin: 4px 26px 0 0;
+      padding: 1px 3px;
+      border-radius: 5px;
+      font-family: $secondary-font !important;
+      font-size: 10px;
+    }
+
+    .feedback-form {
+      margin: 12px 26px;
+      position: relative;
+
+      .MuiInputBase-formControl {
+        height: 135px;
+
+        textarea {
+          height: 90px !important;
+          overflow-y: hidden !important;
+        }
+      }
+      p.Mui-error {
+        position: absolute;
+        bottom: -22px;
+        left: 0;
+      }
+    }
+    .btn-grp {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      button.btn {
+        width: 130px !important;
+        min-width: 130px !important;
+        padding: 5px 25px;
+        margin: 0 20px 0 0 !important;
+        border-radius: 4px !important;
+
+        span.MuiButton-label {
+          text-transform: uppercase !important;
+          font-weight: 400 !important;
+          font-size: 15px;
+          line-height: 19px;
+        }
+      }
+      .btn-transparent {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+.candidate-status-menu-wrap {
+  .MuiPopover-paper {
+    border-radius: 12px;
+
+    ul {
+      padding: 0;
+      li:first-child {
+        background-color: $dark-pink;
+        color: $white;
+        height: 40px;
+        border-radius: 12px;
+        font-weight: 400;
+      }
+      li {
+        font-family: $primary-font;
+        font-size: 14px !important;
+        font-weight: 500;
+        color: $purple-900;
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 8px 6px 23px !important;
+        margin: 6px;
+        .feedback-btn {
+          font-size: 14px !important;
+          color: $dark-pink;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+.profile-picture-button-wrapper {
+  position: relative;
+  margin-bottom: 35px;
+  cursor: pointer;
+  text-align: center;
+  &:hover {
+    p.upload-image-text {
+      background-color: $dark-pink;
+      color: $white;
+    }
+  }
+  .upload-image-text {
+    margin: 8px;
+    color: $dark-pink;
+    font-family: $primary-font !important;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    border: 2px solid $dark-pink;
+    border-radius: 50px;
+    padding: 8px 16px;
+  }
+
+  .profile-picture-button {
+    z-index: 2;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+
+    input {
+      cursor: pointer;
+      height: 26px !important;
+    }
+  }
+}
+
+.create-profile-form {
+  .image-uploading {
+    .eh-spin-wrapper {
+      .eh-spin-anim {
+        margin-top: -20px;
+      }
+    }
+  }
+
+  .create-upload-vid-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 95px;
+    @media only screen and (max-width: 1024px) {
+      margin-top: 30px;
+    }
+    @media only screen and (max-width: 410px) {
+      flex-wrap: wrap;
+    }
+    .btn-or-avatar {
+      margin-left: 10px;
+      margin-right: 10px;
+      height: 30px;
+      width: 30px;
+      font-size: 16px;
+      @media only screen and (max-width: 410px) {
+        margin: 10px 0;
+      }
+    }
+    button {
+      @media only screen and (max-width: 410px) {
+        width: 100%;
+      }
+    }
+    button.border-button.btn-transparent {
+      margin-top: 0 !important;
+    }
+  }
+
+  .video-uploading {
+    .eh-spin-wrapper {
+      .eh-spin-anim {
+        margin-top: -20px;
+      }
+    }
+  }
+}

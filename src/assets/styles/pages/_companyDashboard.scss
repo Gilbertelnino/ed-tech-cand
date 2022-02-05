@@ -1,0 +1,131 @@
+.welcome-text{
+    margin-bottom: 30px;
+    h2,p{
+        margin: 0;
+        padding: 0;
+    }
+    h2{
+        margin-bottom: 5px;
+    }
+}
+.dashboard-tile{
+    background-color: $white !important;
+    padding: 25px;
+    border-radius: 8px;
+    transition: none !important;
+    box-sizing: border-box;
+    min-height: 185px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0px 22px -5px rgba(0, 0, 0, 0.05);
+    h3,h4,p{
+        margin: 0;
+        padding: 0;
+    }
+    .d-tile-intro{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        .icon{
+            width: 65px;
+            height: 65px;
+            border-radius: 10%;
+            background-color: $secondary-light-gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg{
+                width: 30px;
+                height: 30px;
+            }
+        }   
+        .data{
+            margin-left: 20px;
+            h3{
+                color: $light-black-text;  
+                font-size: 24px;
+                font-weight: 600;
+            }
+            p{
+                color: $head-title-color;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+    }
+    .d-tile-detail{
+        display: flex;
+        width: 100%;
+        align-items: end;
+        padding-left: 85px;
+        .count{
+            h4{
+                color: $dark-pink;
+                font-size: 20px;
+                font-weight: 700;
+            }
+            p{
+                color: $light-black-text;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+    .job-posted-count{
+        justify-content: space-between;
+    }
+}
+.scheduled-interview, .applied-candidate{
+    .d-tile-detail{
+        .count{
+            p{
+                color: $head-title-color;
+                font-weight: normal;  
+                font-size: 16px;
+            }
+        }
+    }
+}
+.job-posted{
+    .d-tile-intro{
+        .icon{
+            background-color: $transparent-blue;
+            svg{
+              color: $blue-700;  
+            }
+        }
+    }
+}
+.applied-candidate{
+    .d-tile-intro{
+        .icon{
+            background-color: $transparent-green;
+            svg{
+                color: $svg-green;
+            }
+        }
+    }
+}
+.scheduled-interview{
+    .d-tile-intro{
+        .icon{
+            background-color: $transparent-yellow;
+            svg{
+              color: $warning-color;  
+            }
+        }
+    }
+}
+.page-dashboard{
+    .MuiGrid-container{
+        @media only screen and (max-width: 992px) {
+            margin: 0;
+        }
+        .dashboard-tile{
+            @media only screen and (max-width: 767px) {
+                padding: 20px 15px;
+                min-height: inherit;
+            }
+        }
+    }
+}

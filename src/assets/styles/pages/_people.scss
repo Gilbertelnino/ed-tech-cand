@@ -1,0 +1,459 @@
+.inner-tab-container {
+  .page-people {
+    @media only screen and (max-width: 992px) {
+      margin: 0 0px !important;
+    }
+
+    .people-wrapper {
+      .people-content {
+        .people-list {
+          .people-list-scroller {
+            overflow: unset !important;
+          }
+
+          .people-list-wrapper {
+            max-height: calc(100vh - 327px) !important;
+            overflow-x: hidden;
+            overflow-y: auto;
+            margin-top: 10px;
+            padding-right: 15px;
+
+            &::-webkit-scrollbar {
+              display: none;
+            }
+
+            scrollbar-width: none;
+
+            .people-list-container {
+              .profile-paper {
+                background: transparent;
+                box-shadow: none;
+                margin-bottom: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .profile-picture {
+                  border-radius: 4px;
+                  overflow: hidden;
+                  width: 230px;
+                  .profile-image {
+                    position: initial;
+                    width: 100%;
+                    background-color: $gray-400;
+                  }
+                }
+
+                p {
+                  color: $gray-color;
+                  font-family: $secondary-font !important;
+                  text-transform: capitalize;
+                  margin-bottom: 0 !important;
+                  width: 208px;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  white-space: nowrap;
+                }
+
+                .profile-name-skeleton {
+                  margin: 0 auto;
+                }
+
+                .profile-name {
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 18px;
+                  line-height: 21px;
+                  text-align: left;
+                  width: 100%;
+                  color: #202020;
+                }
+
+                .job-title-skeleton {
+                  margin: 0 auto;
+                }
+
+                .job-title {
+                  text-align: left;
+                  width: 100%;
+                  font-family: Work Sans;
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 14px;
+                  line-height: 14px;
+                  margin-top: 7px;
+
+                  color: $gray-550;
+                }
+
+                .profile-action {
+                  display: flex;
+                  width: 100%;
+                  margin-top: 25px;
+
+                  .btn {
+                    top: 28.83%;
+                    bottom: 43.52%;
+                    border: 1px solid $dark-pink;
+                    border-radius: 2px;
+                    span.MuiButton-label {
+                      font-weight: 600;
+                      font-size: 16px;
+                    }
+                  }
+
+                  .edit-btn-skeleton {
+                    width: 60px;
+                    margin: 0 10px;
+                  }
+
+                  .delete-btn-skeleton {
+                    width: 75px;
+                    margin: 0 10px;
+                  }
+                  .edit-btn {
+                    border: 1px solid $dark-pink !important;
+                    border-radius: 2px !important;
+                    margin-right: 32px;
+                    width: 100px !important;
+                  } 
+                  .delete-btn {
+                    border: 1px solid $dark-pink !important;
+                    border-radius: 2px !important;
+                    width: 100px !important;
+                    min-width: 100px !important;
+                  }
+                }
+              }
+
+              .add-new-people-label {
+                span {
+                  cursor: pointer;
+                  font-family: $primary-font !important;
+                  display: inline-flex;
+                  align-items: center;
+                  font-weight: 600;
+
+                  svg {
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 8px;
+                    fill: $main-pink-color;
+                  }
+                }
+              }
+
+              .add-new-people-label,
+              .all-people-label {
+                text-align: left;
+                color: $gray-color;
+                font-size: 16px;
+                text-transform: capitalize;
+                font-family: $primary-font !important;
+                font-weight: 500;
+              }
+
+              input {
+                background-color: $white !important;
+                border-radius: 4px;
+              }
+              hr.company-heading-line{
+                border-top: 1px solid #f9e6f1;
+                margin-left: -25px;
+                margin-right: -25px;
+              }
+              
+            }
+
+            @media only screen and (max-width: 1024px) {
+              max-height: calc(100vh - 128px) !important;
+              margin-top: 0;
+            }
+          }
+        }
+      }
+
+      .selected-profile {
+        padding: unset !important;
+      }
+    }
+  }
+
+  .add-people-form {
+   
+    .people-id {
+      display: none;
+    }
+
+    .MuiFormControl-root {
+      margin: 5px;
+    }
+
+    .people-form-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 25px !important;
+      .page-home-form {
+        display: flex;
+        .select-profile {
+          fieldset {
+            display: none;
+          }
+        }
+      }
+      .people-form-area {
+        margin-left: 25px;
+
+        @media only screen and (max-width: 767px) {
+          margin-left: 10px;
+        }
+        .controls {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          margin-top: 10px;
+          span.span-link {
+            font-size: 14px;
+          }
+          .btn-small {
+            margin-left: 15px;
+          }
+        }
+        .btn-reset {
+          padding-right: 0 !important;
+        }
+      }
+
+      .people-form-save-btn {
+        display: none;
+      }
+
+      .btn-form-reset {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+
+        div[data-save="true"] {
+          left: 0;
+          margin-left: 5px;
+          display: flex;
+          position: absolute;
+
+          .MuiCircularProgress-root {
+            height: 20px !important;
+            width: 20px !important;
+            margin-right: 5px;
+          }
+        }
+      }
+
+      .select-profile {
+        position: relative;
+        border-radius: 50%;
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background-color: $white;
+        @media only screen and (max-width: 600px) {
+          margin: 0 auto;
+        }
+
+        @media only screen and (max-width: 375px) {
+          width: 90px;
+          height: 90px;
+        }
+
+        .select-profile-btn {
+          position: absolute;
+          opacity: 0;
+          width: 100px;
+          height: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 !important;
+
+          input {
+            width: 100px;
+            height: 100px !important;
+            padding: 0;
+            cursor: pointer;
+            border-radius: 50%;
+          }
+        }
+        img.people-img {
+          width: 100% !important;
+          height: 104px;
+        }
+      }
+
+      .selected-profile {
+        padding: unset !important;
+      }
+
+      .eh-spin-container {
+        .eh-spin-wrapper {
+          min-height: unset !important;
+
+          .eh-spin-anim {
+            margin-top: -22px;
+            margin-left: -14px;
+          }
+        }
+      }
+    }
+   
+  }
+  .custom-tab-wrapper {
+    margin: 0px 0px 30px 0px !important;
+    .custom-tab-right {
+      .preview-btn {
+        margin-right: 15px !important;
+        background: white !important;
+        color: $dark-pink !important;
+        width: 85px;
+        min-width: 85px;
+      }
+      .custom-tab-save-btn {
+        margin-right: 15px !important;
+        width: 85px;
+        min-width: 85px;
+      }
+      .publish-button {
+        width: 85px;
+        min-width: 85px;
+      }
+    }
+  }
+}
+
+.public-tab-container {
+  .inner-tab-container {
+    .page-people {
+      .people-wrapper {
+        .people-content {
+          .people-list {
+            .people-list-wrapper {
+              max-height: unset;
+              overflow-x: unset;
+              overflow-y: unset;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.delete-leader-model {
+  .MuiPaper-rounded {
+    border-radius: 8px !important;
+    min-width: 530px;
+    @media only screen and (max-width: 550px) {
+      min-width: 90%;
+    }
+    .MuiDialogTitle-root {
+      padding: 10px 24px;
+      h2 {
+        font-size: 18px;
+      }
+    }
+    .MuiDialogContent-root {
+      padding-top: 20px;
+      p {
+        text-align: left;
+      }
+    }
+    .MuiDialogActions-root {
+      padding: 0 24px 20px;
+      span {
+        text-transform: capitalize;
+      }
+      .btn-primary {
+        width: 110px !important;
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+.company-body-wrapper {
+  .inner-tab-container {
+    .page-people {
+      .people-wrapper {
+        .people-content {
+          .people-list {
+            .people-list-scroller {
+              .people-list-wrapper {
+                .people-list-container {
+                  .leader-header {
+                    font-family: Work Sans;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 23px;
+                    margin-bottom: 25px;
+                    color: $purple-900;
+                  }
+
+                  .add-people-form {
+                    .people-form-wrapper {
+                      .select-profile {
+                        width: 72px !important;
+                        height: 72px !important;
+                        background-color: rgba(255, 9, 144, 0.15) !important;
+                        span{
+                          svg{
+                            color: $dark-pink;
+                            margin-top: 6px;
+                          }
+                        }
+                      }
+                      .people-form-controls {
+                        .controls {
+                          .controlsBtn {
+                            width: 123px !important;
+                            left: 32px !important;
+                            top: 26px !important;
+                            margin-right: 16px !important;
+                            height: 36px !important;
+                          }
+                        }
+                      }
+                      .people-form-area {
+                        .required {
+                          font-style: normal;
+                          line-height: 18px;
+                          margin-left: 6px;
+                        }
+                        label.required::after{
+                          color: $dark-pink !important;
+                        }
+                      }
+                    }
+                  }
+                  .people-list {
+                    .profile-paper {
+                      background: $white;
+                      border: 1px solid $green-40;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      padding: 20px;
+                    }
+                    .MuiGrid-item{
+                      padding: 15px !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

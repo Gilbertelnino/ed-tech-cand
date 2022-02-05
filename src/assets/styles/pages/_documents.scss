@@ -1,0 +1,59 @@
+.doc-container {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: $faded-pink-bg;
+  padding: 20px;
+
+  .doc-title {
+    font-family: Times;
+    font-size: 20px;
+    color: $main-pink-color;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .doc-sub-title {
+    font-family: Times;
+    font-size: 16px;
+    color: $main-pink-color;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .doc-sub-header {
+    font-family: Times;
+    font-size: 16px;
+    color: $main-pink-color;
+    text-align: left;
+    font-style: italic;
+    margin: 5px;
+    font-weight: bold;
+  }
+
+  .doc-sub-desc {
+    font-size: 13px;
+    color: $black;
+    text-align: left;
+
+    p {
+      font-size: 13px;
+      color: $black;
+      text-align: left;
+    }
+  }
+
+  p {
+    color: $secondary-text;
+    font-size: 10px;
+    text-align: center;
+    margin: 3px;
+  }
+
+  a {
+    color: $main-pink-color;
+  }
+}

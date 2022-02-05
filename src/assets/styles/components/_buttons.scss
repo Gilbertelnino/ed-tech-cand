@@ -1,0 +1,166 @@
+button {
+  &.MuiButton-root {
+    text-transform: none;
+  }
+
+  &.btn {
+    border-radius: 24px;
+    width: 195px;
+    height: 40px;
+    font-size: 15px;
+    box-shadow: none;
+
+    &-primary {
+      background: $primary;
+      color: $white !important;
+    }
+
+    &-dark-pink {
+      background: $dark-pink;
+      color: $white;
+
+      &:hover {
+        background: $dark-pink-hover;
+      }
+    }
+
+    &-light-green {
+      background: $light-green;
+      color: $primary-text;
+      box-shadow: none;
+
+      &:hover {
+        background-color: $light-green-hover;
+        box-shadow: none;
+      }
+    }
+
+    &-upload {
+      border-radius: 3px;
+      background-color: $white;
+      color: $dark-pink;
+      border: 1px solid $dark-pink;
+
+      &:hover {
+        background: $dark-pink-hover;
+      }
+    }
+
+    &-create-video {
+      color: $purple-900;
+      border-color: $purple-900;
+      background: transparent;
+      border-radius: 4px;
+      &:hover {
+        background: transparent;
+      }
+    }
+
+    &-reset {
+      color: $gray-color;
+      width: 0;
+      border-radius: 0;
+      border-color: transparent;
+      border: none;
+
+      &:hover {
+        background-color: transparent;
+        border: none;
+        color: $gray-600;
+      }
+    }
+
+    &-rounded {
+      background: $faded-pink;
+      border: 1.5px solid $primary;
+      color: $dark-pink;
+      border-radius: 50%;
+      height: 80px;
+      width: 80px;
+    }
+
+    &-transparent {
+      background: transparent;
+      border: 2px solid $dark-pink;
+      color: $dark-pink;
+      border-radius: 50px;
+      height: 40px;
+      box-shadow: none;
+
+      .MuiButton-label {
+        color: $dark-pink !important;
+        font-family: $primary-font !important;
+        font-weight: 600 !important;
+      }
+
+      &:hover {
+        background: $dark-pink !important;
+
+        .MuiButton-label {
+          color: $white !important;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .MuiButton-label {
+      font-family: $primary-font !important;
+      font-weight: 600;
+    }
+
+    &-small {
+      width: 80px;
+      height: 20px;
+      font-size: 12px;
+      background-color: $light-pink-color;
+      padding: 3px 10px;
+
+      span {
+        color: $dark-pink;
+        line-height: 14px;
+      }
+      &:hover {
+        box-shadow: none;
+      }
+    }
+
+    &-small-transparant {
+      background-color: $white;
+      border: 1px solid $dark-pink !important;
+    }
+
+    &-link-btn {
+      padding: 0;
+      background-color: transparent;
+      box-shadow: none;
+      color: $primary-font !important;
+      width: auto;
+      height: auto;
+      border: none;
+      font-weight: 600;
+      text-decoration: underline;
+
+      &:hover {
+        color: $main-btext-gray-color !important;
+        background-color: transparent;
+        box-shadow: none;
+        text-decoration: underline;
+        border: none !important;
+      }
+    }
+  }
+}
+
+.btn-job-hub {
+  border-radius: 0;
+}
+
+.btn-submit-application {
+  background-color: $dark-pink;
+
+  a {
+    color: $white;
+    font-family: $primary-font;
+    text-decoration: none;
+  }
+}

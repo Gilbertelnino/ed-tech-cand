@@ -1,0 +1,34 @@
+.drop-area {
+  height: 170px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  p {
+    margin: 0 !important;
+    color: $gray-450;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0;
+    text-align: center;
+    @media only screen and (max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+  p.small {
+    font-size: 14px;
+    margin-top: 7px !important;
+    font-weight: 500 !important;
+    color: $gray-550;
+  }
+  img{
+    margin-top: 20px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    height: 215px;
+    padding: 0 10px;
+  }
+}

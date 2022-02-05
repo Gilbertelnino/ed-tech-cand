@@ -1,0 +1,54 @@
+.admin-layout {
+  overflow: auto;
+
+  .admin-wrapper {
+    .admin-content-wrapper {
+      min-height: calc(100vh - 136px);
+      padding: 16px 16px 0px 16px;
+
+      .admin-dropdowns {
+        .eh-select {
+          margin-right: 32px;
+          min-width: 144px;
+
+          .MuiOutlinedInput-root {
+            &:hover {
+              .MuiOutlinedInput-notchedOutline {
+                border-color: $dark-pink;
+              }
+            }
+          }
+
+          .MuiInputBase-root {
+            line-height: 0px;
+
+            .MuiSelect-root {
+              padding: 20px 12px 0px;
+              color: $dark-pink;
+            }
+
+            .MuiOutlinedInput-notchedOutline {
+              border-color: $primary;
+            }
+          }
+        }
+
+        .active {
+          background-color: $primary;
+
+          .MuiInputBase-root {
+            .MuiSelect-root {
+              color: $black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.MuiPopover-root {
+  .MuiPaper-root {
+    min-width: 144px;
+  }
+}

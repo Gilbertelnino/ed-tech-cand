@@ -1,0 +1,173 @@
+.auth-wrapper {
+  .outer-link {
+    margin-bottom: 0;
+    margin-top: 30px;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 16px !important;
+    text-align: center !important;
+    color: $input-hover-black !important;
+    a {
+      color: $dark-pink;
+      text-decoration: none;
+    }
+  }
+  .sign-up-outer-link{
+    margin-bottom: 50px;
+  }
+}
+.auth-card {
+  background: $white;
+  box-shadow: 0px 39px 100px $bg-hover;
+  border-radius: 27px;
+  padding: 40px 74px;
+  &-title {
+    font-weight: 600 !important;
+    font-size: 32px !important;
+    line-height: 38px !important;
+    color: $input-hover-black !important;
+    text-align: center;
+  }
+  form {
+    .form-group {
+      margin-bottom: 30px;
+      &-label {
+        margin: 0;
+        margin-bottom: 9px;
+        font-weight: 500 !important;
+        font-size: 15px !important;
+        line-height: 18px !important;
+        color: $purple-900;
+      }
+      .inline-inputs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .MuiFormControl-root {
+          width: 316px;
+          .MuiInputBase-root {
+            .MuiInputBase-input {
+              padding: 15px 8px;
+              border-top-left-radius: 0 !important;
+              border-bottom-left-radius: 0 !important;
+            }
+          }
+        }
+      }
+      .check {
+        justify-content: center;
+        align-items: center;
+        .MuiFormGroup-root {
+          label {
+            margin: 0;
+            .MuiButtonBase-root {
+              padding: 0;
+            }
+          }
+        }
+        label,
+        a {
+          margin: 0;
+          font-family: Lato, sans-serif !important;
+          font-style: normal !important;
+          font-weight: 500 !important;
+          font-size: 17px !important;
+          line-height: 33px !important;
+          color: $gray-450 !important;
+          span {
+            color: $dark-pink;
+          }
+        }
+      }
+      label.privacy-agreement{
+        a{
+          text-decoration: underline;
+        }
+      }
+      .MuiButtonBase-root {
+        border-radius: 50px !important;
+      }
+      a {
+        font-family: $primary-font !important;
+        font-weight: 500 !important;
+        font-size: 18px !important;
+        line-height: 21px !important;
+        color: $gray-550;
+        text-decoration: none;
+      }
+      .MuiFormControl-root {
+        .MuiInputBase-root {
+          input[type="password"] {
+            letter-spacing: 21px !important;
+            font-size: 22px !important;
+          }
+          .MuiInputBase-input::placeholder {
+            font-weight: 500 !important;
+            font-size: 15px !important;
+            line-height: 18px !important;
+            color: $gray-450;
+            letter-spacing: 0;
+          }
+          > svg {
+            fill: $black;
+          }
+        }
+      }
+    }
+    .form-group:last-child {
+      margin-bottom: 0;
+    }
+    .form-group.btn-group {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: center;
+      .text-danger{
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+.auth-signup-wrapper {
+  width: 652px;
+  margin: 0 auto;
+  margin-top: 50px;
+  .social-login-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;    
+    opacity: 0.3;
+    .label-wrapper {
+      border-bottom: 1px solid $gray-210;
+      p {
+        background-color: $white;
+        position: relative;
+        bottom: -8px;
+        width: 122px;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: 500 !important;
+        font-size: 14px !important;
+        line-height: 16px !important;
+        color: $gray-450;
+      }
+    }
+    .icons {
+      margin-top: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      div {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+.auth-login-wrapper {
+  width: 483px;
+  margin: 0 auto;
+}

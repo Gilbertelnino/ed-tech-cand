@@ -1,0 +1,24 @@
+.basic-layout-wrapper {
+  padding-top: 95px;
+  .company-admin-profile {
+    .profile-subheading {
+      .heading-line {
+        height: 2px;
+        background-color: $dark-pink;
+        border: none;
+      }
+    }
+    .btn-dark-pink {
+      height: 40px;
+      .MuiButton-label {
+        font-family: $secondary-font !important;
+      }
+    }
+    .btn-save-darft {
+      color: $secondary-text;
+      font-family: $secondary-font !important;
+      font-size: 20px !important;
+      text-decoration: underline;
+    }
+  }
+}

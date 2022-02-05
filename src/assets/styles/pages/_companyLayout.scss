@@ -1,0 +1,393 @@
+.company-layout {
+  overflow: auto;
+
+  .navbar-search {
+    display: none;
+  }
+
+  .banner {
+    .banner-img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .public-company-wrapper {
+    padding: 0px 65px;
+    background-color: $white !important;
+
+    .company-profile-intro {
+      .pink-text {
+        font-weight: 300;
+      }
+    }
+
+    .job-grid-container {
+      max-height: none !important;
+      overflow-x: hidden !important;
+      overflow-y: hidden !important;
+
+      @media only screen and (max-width: 1024px) {
+        max-height: calc(100vh - 123px);
+      }
+
+      .job-grid-wrapper {
+        margin-top: 15px;
+      }
+      .jobs-pagination{
+        margin: 30px 0;
+      }
+    }
+
+    .inner-navigation-tabs {
+      .tab-inner-wrap {
+        display: flex !important;
+        justify-content: center;
+      }
+    }
+  }
+
+  .company-wrapper {
+    min-height: $screen-min-height;
+    display: flex;
+    flex-grow: 1;
+    background-color: $tab-gray-color;
+
+    .navigation-tabs {
+      border-right: 1px solid rgba(15, 14, 14, 0.12);
+      background-color: $white;
+      min-width: 155px;
+      padding-top: 20px;
+
+      @media only screen and (max-width: 992px) {
+        display: none;
+      }
+
+      .MuiTab-labelIcon {
+        min-width: inherit;
+        padding: 10px 12px;
+
+        .MuiTab-wrapper {
+          font-size: 14px;
+          font-family: $primary-font !important;
+          text-transform: initial;
+          color: $gray-color;
+          transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+          svg {
+            width: 26px;
+            height: 26px;
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          .MuiTab-wrapper {
+            color: $gray-800;
+          }
+        }
+      }
+
+      .Mui-selected {
+        .MuiTab-wrapper {
+          color: $dark-pink;
+
+          svg {
+            fill: $dark-pink;
+          }
+        }
+      }
+
+      .microsoft-logo {
+        margin-top: 5px;
+        opacity: 1;
+      }
+      .sidebar-company-logo{
+        cursor: pointer !important;
+      }
+      .company-logo {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .tab-container {
+      background-color: $tertiary !important;
+      padding: 25px;
+      width: 100%;
+
+      @media only screen and (max-width: 992px) {
+        padding: 10px;
+        overflow-x: hidden;
+      }
+
+      .mobile-nav-wrapper {
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        display: none;
+
+        @media only screen and (max-width: 992px) {
+          display: flex;
+        }
+
+        .mobile-nav-select-box {
+          width: 60%;
+          z-index: 9;
+
+          >div {
+            box-shadow: none;
+
+            div {
+              span {
+                display: none !important;
+              }
+
+              b {
+                color: $dark-pink;
+                display: flex;
+                align-items: center;
+              }
+
+              div {
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+
+                svg {
+                  margin-right: 10px;
+                }
+              }
+            }
+          }
+
+          >div {
+            margin: 0;
+            border: none !important;
+            box-shadow: 0 0px 22px -5px rgba(0, 0, 0, 0.15);
+          }
+
+          div:last-child {
+            color: gray;
+          }
+        }
+
+        .company-logo {
+          height: 45px;
+          width: 45px;
+          border-radius: 6px;
+        }
+      }
+    }
+
+    .public-tab-container {
+      padding: 25px;
+      width: 100%;
+    }
+
+    .eh-spin-container {
+      .eh-spin-wrapper {
+        min-height: $screen-min-height;
+      }
+
+      .eh-spin-child-container {
+        .tab-container {
+          width: auto;
+          padding: 0;
+          min-height: calc(100vh - 161px);
+        }
+      }
+    }
+
+    .inner-navigation-tabs {
+      flex-grow: 1;
+
+      .MuiTabs-root {
+        margin-bottom: 10px;
+        position: relative;
+
+        button {
+          @media only screen and (min-width: 1024px) and (max-width: 1250px) {
+            min-width: 100px;
+          }
+
+          @media only screen and (min-width: 960px) and (max-width: 1024px) {
+            min-width: 60px;
+          }
+        }
+
+        .Mui-selected {
+          .MuiTab-wrapper {
+            font-weight: bold;
+            color: $black;
+          }
+        }
+
+        .MuiTab-wrapper {
+          text-transform: initial;
+          font-family: $primary-font !important;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          color: $primary-nav;
+        }
+
+        @media only screen and (max-width: 1100px) {
+          .MuiTabs-scrollButtonsDesktop {
+            display: flex !important;
+            width: 35px;
+            position: relative;
+
+            svg {
+              position: absolute;
+              top: 14px;
+              width: 26px;
+              height: 26px;
+            }
+          }
+        }
+      }
+
+      .tab-action-button-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        align-items: center;
+        margin-bottom: -48px;
+
+        @media only screen and (max-width: 1350px) {
+          margin-bottom: 10px;
+        }
+        @media only screen and (max-width: 991px) {
+          justify-content: center;
+        }
+        @media only screen and (max-width: 550px) {
+          flex-wrap: wrap;
+        }
+        .btn {
+          margin: 0 5px;
+          text-transform: initial;
+          border-radius: 50px;
+
+          @media only screen and (max-width: 1150px) {
+            width: 160px;
+          }
+
+          @media only screen and (max-width: 650px) {
+            width: 110px !important;
+            padding: 5px 5px;
+            margin: 8px 3px;
+          }
+
+          @media only screen and (max-width: 550px) {
+            width: 118px !important;
+            font-size: 13px;
+          }
+        }
+
+        .add-btn {
+          background: $light-green;
+          color: $primary-text !important;
+          box-shadow: none;
+
+          &:hover {
+            background-color: $light-green-hover;
+          }
+        }
+
+        .preview-btn {
+          width: 135px !important;
+          color: $primary-accent !important;
+          background: transparent;
+          box-shadow: none;
+          .MuiButton-label{
+            color: $white;
+          }
+          &:hover {
+            color: $dark-pink;
+            background-color: transparent;
+          }
+        }
+
+        .view-btn {
+          color: $black !important;
+          background: none;
+          border: 1px solid $dark-green-color;
+
+          &:hover {
+            background-color: $gray-200 !important;
+          }
+        }
+
+        .search-btn {
+          color: $dark-pink;
+          width: 50px;
+
+          &:hover {
+            color: $dark-pink-hover;
+          }
+        }
+
+        .search-form {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+
+          .MuiInputBase-root {
+            border-radius: 24px;
+          }
+
+          .btn-search {
+            padding: 0;
+          }
+        }
+      }
+
+
+      /*--below commented css are for body scrollbar for now put is as it is need to check---*/
+      .inner-tab-container {
+        // height: calc(100vh - 218px);
+        // overflow: auto;
+      }
+
+      .tab-inner-wrap {
+        display: inline-flex;
+
+        @media only screen and (max-width: 992px) {
+          display: flex;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 1024px) {
+      min-height: calc(100vh - 70px);
+    }
+  }
+}
+
+/*--cover up mac, mac-book, mac book pro, and mac-book retina display screen---*/
+@media only screen and (min-width: 1160px) and (max-width: 1920px) {
+  .company-layout {
+    .company-wrapper {
+      min-height: calc(100vh - 88px) !important;
+
+      .tab-container {
+        .inner-navigation-tabs {
+          .MuiTabs-root {
+            .MuiTab-root {
+              min-width: 120px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+table {
+  tr {
+    td {
+      font-family: $secondary-font !important;
+    }
+  }
+}

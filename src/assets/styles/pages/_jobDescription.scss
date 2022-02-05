@@ -1,0 +1,247 @@
+#jobDescription {
+  padding-left: 100px;
+
+  @media only screen and (max-width: 765px) {
+    padding-left: 50px;
+  }
+
+  .imgCompany {
+    @media only screen and (max-width: 765px) {
+      width: 120px;
+      float: none;
+    }
+
+    width: 86%;
+    height: auto;
+    max-width: 120px;
+    float: right;
+    margin-right: 30px;
+    max-height: 50px;
+  }
+
+  .job-info-header {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 35px;
+    flex-direction: column;
+
+    @media only screen and (max-width: 765px) {
+      margin-top: 27px;
+    }
+
+    .job-title {
+      font-family: $primary-font;
+      font-size: 28px;
+      color: $black;
+      line-height: 25px;
+    }
+
+    .job-location {
+      font-size: 18px;
+      color: $black;
+      margin-top: 17px;
+    }
+
+    .job-posted-time {
+      font-size: 14px;
+      color: $secondary-text;
+      margin-top: 17px;
+    }
+  }
+
+  .job-info-body {
+    display: flex;
+    margin-top: 40px;
+    font-family: $secondary-font;
+
+    @media only screen and (max-width: 765px) {
+      flex-direction: column-reverse;
+    }
+
+    .job-desc {
+      white-space: pre-line;
+      flex-basis: 64%;
+
+      .titleDescription {
+        font-size: 20px;
+        color: $black;
+        padding-bottom: 4px;
+      }
+
+      @media only screen and (max-width: 765px) {
+        width: 100%;
+        font-size: 14px;
+        margin-top: 20px;
+      }
+    }
+
+    .job-apply-section {
+      padding-left: 90px;
+
+      @media only screen and (max-width: 765px) {
+        padding-left: 0px;
+        margin-top: -18px;
+      }
+
+      .apply-button {
+        background: $primary-accent;
+        border-color: $primary-accent;
+        width: 150px;
+      }
+
+      .apply-button:hover {
+        background: $primary-accent;
+        border-color: $primary-accent;
+        color: $black;
+      }
+
+      .applied-button {
+        background: $main-green-color;
+        color: $white;
+        width: 150px;
+        border-radius: 6px;
+        height: 36px;
+        text-align: center;
+        padding-top: 9px;
+      }
+
+      .save-for-later-button {
+        margin-top: 20px;
+        background: none;
+        border-color: $primary-accent;
+        color: $primary-accent;
+        width: 150px;
+      }
+
+      .save-for-later-button:hover {
+        background: $primary-accent;
+        border-color: $primary-accent;
+        color: $black;
+      }
+
+      p {
+        margin-top: 20px;
+        color: $secondary-error;
+        width: 150px;
+      }
+    }
+  }
+
+  .apply-button:not(:disabled):not(.disabled):active {
+    background-color: $primary-accent !important;
+    border-color: $primary-accent;
+  }
+
+  .jobPopUpTitle {
+    font-family: $primary-font;
+    font-weight: normal;
+    font-size: 28px;
+    color: $black;
+  }
+
+  .jobPopUpDescriptionRow {
+    font-style: normal;
+    margin-top: 30px;
+  }
+
+  .jobPopUpLocation {
+    width: 111px;
+    height: 16px;
+    font-family: $secondary-font;
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: $black;
+  }
+
+  .jobPopUpTimePosted {
+    font-family: $secondary-font;
+    font-weight: normal;
+    font-size: 16px;
+
+    text-transform: capitalize;
+    /* identical to box height */
+
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .jobPopUpFirstRow {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    line-height: 32px;
+  }
+
+  .jobPopUpDescriptionTitle {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: $black;
+  }
+
+  .jobPopUpDescription {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+
+    color: $black;
+  }
+
+  .jobPopUpLabel {
+    color: $white;
+    background-color: $main-pink-color;
+    border-color: $secondary-error;
+    width: 40%;
+    height: 36px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 6px;
+  }
+
+  .jobPopUpApplyButton {
+    margin-top: 20px;
+    width: 40%;
+  }
+}
+
+.beta-prompt {
+  background-color: $lightest-blue;
+  border-bottom: 1px solid $light-blue;
+  height: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+
+  .prompt-button {
+    float: right;
+    color: $light-blue;
+    width: 150px;
+    background: none;
+    border: 1px solid $light-blue;
+  }
+
+  .prompt-text {
+    font-family: $secondary-font;
+    color: $light-blue;
+
+    h3 {
+      font-weight: 100;
+    }
+
+    hr {
+      background-color: $light-blue;
+      margin-top: -8px;
+    }
+  }
+
+  .btn-primary:not(:disabled):not(.disabled).active,
+  .btn-primary:not(:disabled):not(.disabled):active,
+  .show > .btn-primary.dropdown-toggle {
+    background: none;
+    border: 1px solid $light-blue;
+    color: $light-blue;
+  }
+}

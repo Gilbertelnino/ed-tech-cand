@@ -1,0 +1,41 @@
+.user-avatar {
+  &-xsm {
+    height: 40px !important;
+    width: 40px !important;
+  }
+
+  &-sm {
+    height: 80px !important;
+    width: 80px !important;
+  }
+
+  &-md {
+    height: 140px !important;
+    width: 140px !important;
+  }
+
+  &-lg {
+    height: 200px !important;
+    width: 200px !important;
+  }
+
+  &-candidate-profile {
+    height: 200px !important;
+    width: 200px !important;
+  }
+
+  .profile-user-icon {
+    background-color: $white;
+    height: 100%;
+    width: 100%;
+  }
+}
+.MuiAvatar-colorDefault {
+   background-color: $primary-pink !important;
+   span{
+    font-size: 22px;
+    font-weight: 500;
+    color: $dark-pink;
+    text-transform: uppercase;
+   }
+}

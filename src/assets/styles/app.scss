@@ -1,0 +1,387 @@
+@import "./variables";
+
+// Layouts
+@import "./layouts/companyLayout";
+@import "./layouts/defaultLayout";
+@import "./layouts/authLayout";
+
+// Pages
+@import "./pages/auth";
+@import "./pages/pages";
+@import "./pages/modals";
+@import "./pages/candidateProfileUpload";
+@import "./pages/jobPost";
+@import "./pages/landingPage";
+@import "./pages/signUp";
+@import "./pages/jobDescription";
+@import "./pages/profileForm";
+@import "./pages/profileView";
+@import "./pages/adminPages";
+@import "./pages/appliedJobs";
+@import "./pages/candidateProfile";
+@import "./pages/companyPublicPage";
+@import "./pages/jobs";
+@import "./pages/jobDetail";
+@import "./pages/companyCandidatesPage";
+@import "./pages/companyAdminsPage";
+@import "./pages/searchAndConnect";
+@import "./pages/people";
+@import "./pages/companyLayout";
+@import "./pages/adminLayout";
+@import "./pages/jobSearch";
+@import "./header/header";
+@import "./footer/footer";
+@import "./pages/videoListings";
+@import "./pages/jobsLists";
+@import "./pages/companyBasicInfo";
+@import "./pages/privacyHubWrapper";
+@import "./pages/contactUs";
+@import "./pages/companyCandidates";
+@import "./pages/companyPage";
+@import "./pages/companyPublicProfile";
+@import "./pages/messages";
+@import "./pages/candidateConnection";
+@import "./pages/connectionNotifications";
+@import "./pages/_companyDashboard";
+@import "./pages/_errors";
+@import "./pages/Pagination";
+@import "./pages/jobHub";
+
+// Utilities
+@import "./utilities/index";
+
+// Common Components file
+@import "./components/index";
+
+// * {
+//   transition: 0.2s;
+// }
+
+body {
+  background-color: #ffffff;
+  // height: 100px;
+  overflow: auto;
+  text-transform: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-width: 320px;
+  background: #fff;
+  font-family: $primary-font, Arial, Helvetica, sans-serif !important;
+  // font-size: 14px;
+
+  color: rgba(0, 0, 0, 0.87);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-family: $primary-font, Arial, Helvetica, sans-serif !important;
+}
+
+#root {
+  background-color: #ffffff;
+}
+
+.candidateProfileButton {
+  border: 1px solid $main-pink-color;
+}
+
+.MuiTypography-body1 {
+  font-family: $primary-font !important;
+}
+
+form.was-validated .form-control:valid {
+  background-image: none;
+}
+
+.messageCardStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbe6f0;
+  margin-bottom: 20px;
+  border: 1px solid pink;
+  border-radius: 10px;
+  height: 287px;
+  max-width: 686px;
+}
+
+.spinner-border {
+  position: fixed;
+  top: 45%;
+  left: 45%;
+  color: #ed81b3;
+  height: 80px;
+  width: 80px;
+
+  @media only screen and (max-width: 414px) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.container {
+  max-width: 128px;
+  transition: 0.2s;
+}
+
+// Custom CSS
+.navbar-brand {
+  display: inline-block;
+  padding: 0.33rem 0;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  margin: 0 !important;
+}
+
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+  }
+}
+
+.navbar-collapse {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+.navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.5rem 3rem;
+}
+
+.navbar-dark .navbar-brand {
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+.justify-content-end {
+  -ms-flex-pack: end !important;
+  justify-content: flex-end !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.navbar-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .ml-md-5,
+  .mx-md-5 {
+    margin-left: 3rem !important;
+  }
+}
+
+.verify-form {
+  margin-top: 120px !important;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.Toastify__toast-container {
+  //this is for success/toast message redesign, keep it as it is for now
+  width: 300px !important;
+  top: 100px !important;
+
+  .Toastify__toast {
+    background: white !important;
+    box-shadow: -2px 1px 8px 0px $ligh-box-shadow;
+    min-height: 45px;
+    border-radius: 13px !important;
+    align-items: center;
+
+    .notification-wrapper {
+      .notification-text {
+        padding-left: 10px;
+        font-size: 14px;
+        color: $light-black-text;
+      }
+    }
+
+    .Toastify__close-button {
+      color: $gray-400;
+      position: relative;
+      top: 5px;
+      display: none;
+    }
+
+    .notification-icon {
+      display: none;
+    }
+
+    .Toastify__progress-bar {
+      opacity: 0;
+    }
+  }
+
+  .Toastify__toast--error {
+    background-color: $red-400 !important;
+
+    .Toastify__progress-bar {
+      background: $red-400 !important;
+    }
+
+    .notification-icon {
+      svg {
+        fill: $red-500;
+      }
+    }
+  }
+
+  .Toastify__toast--success {
+    background-color: $light-green !important;
+
+    .Toastify__progress-bar {
+      background: $light-green !important;
+    }
+
+    .notification-icon {
+      svg {
+        fill: $green-color;
+      }
+    }
+  }
+
+  .Toastify__toast--warning {
+    background-color: $yellow-color !important;
+
+    .Toastify__progress-bar {
+      background: $yellow-color !important;
+    }
+
+    .notification-icon {
+      svg {
+        fill: $yellow-color;
+      }
+    }
+  }
+
+  .Toastify__toast--info,
+  .Toastify__toast--default {
+    background-color: $blue-300 !important;
+
+    .Toastify__progress-bar {
+      background: $blue-300 !important;
+    }
+
+    .notification-icon {
+      svg {
+        fill: $blue-500;
+      }
+    }
+  }
+}
+
+body {
+  // for scroll issue when user avatar/profile small dropdown open-close
+  padding-right: 0 !important;
+  overflow: inherit !important;
+  overflow-x: hidden !important;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.pointer-event-none {
+  pointer-events: none;
+}
+
+.quote-text {
+  font-size: 10px;
+}

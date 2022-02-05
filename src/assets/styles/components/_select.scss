@@ -1,0 +1,19 @@
+div.eh-select {
+  min-width: 120px;
+
+  .MuiInputBase-root {
+    height: 38px;
+  }
+}
+
+.async-error {
+  div[class$="-control"] {
+    border: 1px solid red;
+  }
+}
+
+.hide-indicator {
+  .eh-custom-dropdown-inner__loading-indicator {
+    opacity: 0;
+  }
+}

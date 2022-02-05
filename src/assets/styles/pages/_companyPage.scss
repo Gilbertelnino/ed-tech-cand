@@ -1,0 +1,618 @@
+.company-body {
+  .company-body-wrapper {
+    //padding-top: 87px !important;
+    .inner-tab-container {
+      .page-company {
+        margin-top: 20px;
+
+        @media only screen and (max-width: 767px) {
+          margin-top: 0;
+        }
+
+        .company-page-form-container {
+          .company-home-page-form {
+            max-height: calc(100vh - 225px);
+            overflow-x: hidden;
+            overflow-y: auto;
+            margin-top: 10px;
+            padding-right: 15px;
+
+            &::-webkit-scrollbar {
+              display: none;
+            }
+
+            scrollbar-width: none;
+
+            @media only screen and (max-width: 992px) {
+              max-height: calc(100vh - 135px) !important;
+              padding-right: 8px;
+            }
+
+            .company-profile-intro {
+              /*Company Banner Section Start*/
+              .profile-disabled {
+                input {
+                  cursor: not-allowed !important;
+                }
+              }
+
+              .profile-banner {
+                position: relative;
+                background-color: $white;
+                cursor: pointer;
+                text-align: center;
+
+                .banner-wrapper {
+                  width: 100%;
+                  display: block !important;
+                }
+
+                .banner-image {
+                  height: 230px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  overflow: hidden;
+                  border-radius: 8px;
+
+                  .select-banner-btn {
+                    position: absolute;
+                    z-index: 2;
+                    opacity: 0;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+
+                    .MuiInputBase-root {
+                      height: 100%;
+
+                      input {
+                        height: 100%;
+                        cursor: pointer;
+                      }
+                    }
+                  }
+
+                  span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0;
+                    line-height: 24px;
+                    font-family: $secondary-font !important;
+                    color: $gray-color;
+                    font-size: 18px;
+
+                    svg {
+                      margin-right: 5px;
+                      fill: $gray-color;
+                    }
+                  }
+                }
+
+                .banner-image-selected {
+                  span {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+
+                .banner-img {
+                  height: 100%;
+                  width: 100%;
+                  cursor: pointer;
+                  object-fit: cover;
+                  object-position: top;
+                }
+              }
+
+              /*Company Banner Section End*/
+              .profile-upload-wrapper {
+                display: flex;
+                justify-content: space-between;
+
+                /*Profile Picture Section Start*/
+                .profile-picture {
+                  margin-bottom: 45px;
+
+                  .select-profile {
+                    position: relative;
+                    border-radius: 50%;
+                    width: 160px;
+                    height: 160px;
+                    background-color: $white;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    margin-top: -70px;
+                    margin-left: 40px;
+                    z-index: 9;
+                    box-sizing: border-box;
+                    overflow: hidden;
+                    background-color: $white;
+                    .select-profile-btn {
+                      position: absolute;
+                      z-index: 2;
+                      opacity: 0;
+                      width: 100%;
+                      height: 100%;
+                      cursor: pointer;
+                      border-radius: 50%;
+
+                      input.MuiInput-input {
+                        height: 100%;
+                        border-radius: 50%;
+                        cursor: pointer;
+                      }
+
+                      .MuiInputBase-root {
+                        height: 100%;
+
+                        input {
+                          height: 100%;
+                          border-radius: 50%;
+                          cursor: pointer;
+                        }
+                      }
+                    }
+
+                    span {
+                      text-align: center;
+                      display: inline-flex;
+                      flex-wrap: wrap;
+                      justify-content: center;
+                      align-items: center;
+                      width: 80px;
+                      font-family: $secondary-font !important;
+                      color: $gray-color;
+                      font-size: 14px;
+                      margin: 0;
+                      cursor: pointer;
+
+                      img {
+                        width: 100%;
+                        height: 100%;
+                      }
+                    }
+                  }
+
+                  .selected-profile {
+                    span {
+                      width: 100% !important;
+                    }
+                  }
+                }
+
+                /*Profile Picture Section End*/
+                /*Upload Video Section Start*/
+                .upload-video {
+                  text-align: center;
+                  margin-top: 10px;
+                  button.upload-video-button {
+                    font-size: 20px;
+                    background-color: $gray-color;
+                    box-shadow: none;
+
+                    span.MuiButton-label {
+                      font-family: $secondary-font !important;
+                    }
+                  }
+
+                  .custom-upload-video-btn {
+                    width: 145px;
+                    position: relative;
+
+                    &:before {
+                      content: "UPLOAD VIDEO";
+                      position: absolute;
+                      width: 145px;
+                      height: 30px;
+                      font-size: 12px;
+                      font-weight: 700;
+                      background-color: transparent;
+                      border-radius: 50px;
+                      line-height: 32px;
+                      color: $dark-pink;
+                      border: 2px solid $dark-pink;
+                      font-family: $secondary-font !important;
+                      cursor: pointer;
+                    }
+
+                    .MuiInputBase-root {
+                      border-radius: 50%;
+
+                      .MuiInputBase-input {
+                        background-color: transparent !important;
+                        opacity: 0;
+                        cursor: pointer;
+                      }
+
+                      fieldset {
+                        border: none !important;
+                      }
+                    }
+                    &:hover {
+                      &:before {
+                        background-color: $dark-pink !important;
+                        color: $white;
+                      }
+                    }
+                  }
+                }
+
+              /*Upload Video Section End*/
+              }
+            }
+
+            .company-profile-form {
+              margin-top: 40px;
+
+              .eh-custom-dropdown-inner__control {
+                input {
+                  background-color: transparent !important;
+                }
+              }
+
+              .location-error {
+                .ap-input {
+                  border: 1px solid $danger;
+                }
+              }
+
+              .page-form {
+                .page-form-wrapper {
+                  .page-home-form {
+                    .home-page-form-save-btn {
+                      display: none;
+                    }
+
+                    .MuiGrid-container {
+                      @media only screen and (max-width: 992px) {
+                        margin: 0;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            .company-profile-leaders {
+              margin-top: 40px;
+              label {
+                font-size: 18px;
+                font-weight: 600 !important;
+                margin-bottom: 20px !important;
+                font-family: $primary-font !important;
+                color: $light-text !important;
+              }
+              .company-people-form-wrapper {
+                .btn-reset {
+                  padding-right: 0 !important;
+                }
+
+                .people-form-disabled {
+                  input {
+                    cursor: not-allowed !important;
+                  }
+                }
+
+                .add-people-form {
+                  .people-form-wrapper {
+                    .eh-spin-container {
+                      .eh-spin-wrapper {
+                        min-height: unset !important;
+
+                        .eh-spin-anim {
+                          margin-top: -22px;
+                          margin-left: -14px;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .MuiGrid-container {
+                  @media only screen and (max-width: 992px) {
+                    margin: 0;
+                  }
+
+                  .page-home-form-field {
+                    @media only screen and (max-width: 992px) {
+                      padding: 10px !important;
+                    }
+                  }
+                }
+              }
+            }
+
+            .company-profile-videos {
+              margin-top: 10px;
+
+              .video-form-disabled {
+                input {
+                  cursor: not-allowed !important;
+                }
+              }
+
+              .page-form-video-wrapper {
+                label {
+                  font-size: 18px;
+                  font-weight: 600;
+                  margin-bottom: 20px;
+                  font-family: $primary-font !important;
+                }
+
+                .profile-video {
+                  position: relative;
+                  border: 1px solid $border;
+                  border-radius: 4px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  cursor: pointer;
+                  min-height: 200px;
+                  background-color: $white;
+                  overflow: hidden;
+                  height: 220px;
+
+                  @media only screen and (max-width: 992px) {
+                    padding: 0px !important;
+                  }
+
+                  @media only screen and (max-width: 475px) {
+                    height: 200px;
+                  }
+
+                  @media only screen and (max-width: 400px) {
+                    min-height: 150px;
+                    height: 150px;
+                  }
+
+                  .select-video-btn {
+                    position: absolute;
+                    z-index: 2;
+                    opacity: 0;
+                    height: 100%;
+
+                    .MuiInputBase-root {
+                      height: 100%;
+                      cursor: pointer;
+
+                      input {
+                        height: 100%;
+                        cursor: pointer;
+                        padding: 0 !important;
+                      }
+                    }
+                  }
+
+                  video {
+                    height: 100%;
+                    width: 100%;
+                    z-index: 5;
+                    position: relative;
+                  }
+
+                  svg {
+                    fill: $gray-color;
+                  }
+
+                  .eh-spin-container {
+                    .eh-spin-wrapper {
+                      min-height: unset !important;
+
+                      .eh-spin-anim {
+                        margin-top: -22px;
+                      }
+                    }
+                  }
+                }
+
+                .dlt-link-btn {
+                  text-align: right;
+                  margin-top: 8px;
+                  display: flex;
+                  justify-content: flex-end;
+
+                  .delete-icon {
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+
+                    &:hover {
+                      color: $red-500;
+
+                      svg {
+                        fill: $red-500;
+                      }
+                    }
+
+                    span {
+                      text-transform: uppercase;
+                      font-family: $primary-font !important;
+                      padding-left: 4px;
+                      font-weight: 500;
+                    }
+
+                    svg {
+                      fill: $gray-color;
+                      cursor: pointer;
+
+                      &:hover {
+                        fill: $red-500;
+                      }
+                    }
+                  }
+                }
+
+                @media only screen and (max-width: 992px) {
+                  .MuiGrid-container {
+                    margin: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        input,
+        textarea {
+          background-color: $white !important;
+          border-radius: 4px;
+        }
+
+        .job-form-text-area {
+          margin-top: 30px;
+
+          .MuiTextField-root {
+            background-color: $white !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.company-body-wrapper {
+  .inner-tab-container {
+    .page-company {
+      .company-page-form-container {
+        .company-page-form-scroller {
+          .company-home-page-form {
+            max-height: calc(100vh - 225px);
+            overflow-x: hidden;
+            overflow-y: auto;
+            margin-top: 10px;
+            padding-right: 15px;
+            &::-webkit-scrollbar {
+              display: none;
+            }
+            scrollbar-width: none;
+            .company-profile-leaders {
+              .company-profile-leaders-line {
+                border-top: 1px solid $pink-75;
+                // margin-left: -35px !important;
+                // margin-right: -35px !important;
+              }
+              .leader-header {
+                height: 27px;
+                font-family: Work Sans;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 23px;
+                color: $purple-900;
+              }
+              .add-people-form {
+                .people-form-wrapper {
+                  display: block !important;
+                  margin-bottom: 0px !important;
+                }
+              }
+              .people-form-wrapper {
+                .page-home-form {
+                  .controls {
+                    .controlsBtn {
+                      width: 80px;
+                      min-width: 80px;
+                      left: 32px !important;
+                      top: 26px !important;
+                      margin-right: 16px !important;
+                      height: 36px !important;
+                    }
+                  }
+                  .page-home-form-field {
+                    margin-left: 30px !important;
+                    label.required::after {
+                      color: $dark-pink !important;
+                    }
+                  }
+                  .select-profile {
+                    width: 72px !important;
+                    height: 72px !important;
+                    background-color: rgba(255, 9, 144, 0.15) !important;
+                  }
+                  
+                }
+              }
+            }
+            .company-profile-videos {
+              .page-form-video-wrapper {
+                .video-header {
+                  height: 27px;
+                  font-family: Work Sans;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 20px;
+                  line-height: 23px;
+                  color: $purple-900;
+                }
+                .profile-video input {
+                  height: 210px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.video-delete-modal {
+  border: none !important;
+
+  .video-delete-modal-wrapper {
+    padding: 32px;
+
+    @media only screen and (max-width: 600px) {
+      padding: 0;
+    }
+
+    .delete-video-lable-wrapper {
+      margin-bottom: 32px;
+
+      .delete-video-lable {
+        font-family: $primary-font !important;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+
+    .action-button-wrapper {
+      padding: 16px;
+      display: flex;
+      justify-content: center;
+
+      @media only screen and (max-width: 600px) {
+        flex-wrap: wrap !important;
+      }
+
+      .delete-video-no {
+        background: transparent !important;
+        color: $dark-pink !important;
+
+        &:hover {
+          .MuiButton-label {
+            color: $dark-pink !important;
+          }
+
+          background-color: $faded-pink-bg !important;
+        }
+      }
+
+      .dlt-btn {
+        margin: 0 10px !important;
+        width: 135px;
+        height: 40px;
+
+        @media only screen and (max-width: 600px) {
+          margin-bottom: 15px !important;
+        }
+      }
+    }
+  }
+}

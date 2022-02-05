@@ -1,0 +1,343 @@
+.span-link {
+  cursor: pointer;
+  color: $dark-pink;
+}
+
+// Text color
+.text-primary {
+  color: $primary-accent;
+}
+
+.text-black {
+  color: $black;
+}
+
+.text-gray-50 {
+  color: $gray-50;
+}
+
+.text-gray-100 {
+  color: $gray-100;
+}
+
+.text-gray-200 {
+  color: $gray-200;
+}
+
+.text-gray-300 {
+  color: $gray-300;
+}
+
+.text-gray-400 {
+  color: $gray-400;
+}
+
+.text-gray-500 {
+  color: $gray-500;
+}
+
+.text-gray-600 {
+  color: $gray-600;
+}
+
+.text-gray-700 {
+  color: $gray-700;
+}
+
+.text-gray-800 {
+  color: $gray-800;
+}
+
+.text-gray-900 {
+  color: $gray-900;
+}
+
+.text-red-50 {
+  color: $red-50;
+}
+
+.text-red-100 {
+  color: $red-100;
+}
+
+.text-red-200 {
+  color: $red-200;
+}
+
+.text-red-300 {
+  color: $red-300;
+}
+
+.text-red-400 {
+  color: $red-400;
+}
+
+.text-red-500 {
+  color: $red-500;
+}
+
+.text-red-600 {
+  color: $red-600;
+}
+
+.text-red-700 {
+  color: $red-700;
+}
+
+.text-red-800 {
+  color: $red-800;
+}
+
+.text-red-900 {
+  color: $red-900;
+}
+
+.text-blue-50 {
+  color: $blue-50;
+}
+
+.text-blue-100 {
+  color: $blue-100;
+}
+
+.text-blue-200 {
+  color: $blue-200;
+}
+
+.text-blue-300 {
+  color: $blue-300;
+}
+
+.text-blue-400 {
+  color: $blue-400;
+}
+
+.text-blue-500 {
+  color: $blue-500;
+}
+
+.text-blue-600 {
+  color: $blue-600;
+}
+
+.text-blue-700 {
+  color: $blue-700;
+}
+
+.text-blue-800 {
+  color: $blue-800;
+}
+
+.text-blue-900 {
+  color: $blue-900;
+}
+
+.text-pink-50 {
+  color: $pink-50;
+}
+
+.text-pink-100 {
+  color: $pink-100;
+}
+
+.text-pink-200 {
+  color: $pink-200;
+}
+
+.text-pink-300 {
+  color: $pink-300;
+}
+
+.text-pink-400 {
+  color: $pink-400;
+}
+
+.text-pink-500 {
+  color: $pink-500;
+}
+
+.text-pink-600 {
+  color: $pink-600;
+}
+
+.text-pink-700 {
+  color: $pink-700;
+}
+
+.text-pink-800 {
+  color: $pink-800;
+}
+
+.text-pink-900 {
+  color: $pink-900;
+}
+
+// Background color
+.bg-gray-50 {
+  background-color: $gray-50;
+}
+
+.bg-gray-100 {
+  background-color: $gray-100;
+}
+
+.bg-gray-200 {
+  background-color: $gray-200;
+}
+
+.bg-gray-300 {
+  background-color: $gray-300;
+}
+
+.bg-gray-400 {
+  background-color: $gray-400;
+}
+
+.bg-gray-500 {
+  background-color: $gray-500;
+}
+
+.bg-gray-600 {
+  background-color: $gray-600;
+}
+
+.bg-gray-700 {
+  background-color: $gray-700;
+}
+
+.bg-gray-800 {
+  background-color: $gray-800;
+}
+
+.bg-gray-900 {
+  background-color: $gray-900;
+}
+
+.bg-red-50 {
+  background-color: $red-50;
+}
+
+.bg-red-100 {
+  background-color: $red-100;
+}
+
+.bg-red-200 {
+  background-color: $red-200;
+}
+
+.bg-red-300 {
+  background-color: $red-300;
+}
+
+.bg-red-400 {
+  background-color: $red-400;
+}
+
+.bg-red-500 {
+  background-color: $red-500;
+}
+
+.bg-red-600 {
+  background-color: $red-600;
+}
+
+.bg-red-700 {
+  background-color: $red-700;
+}
+
+.bg-red-800 {
+  background-color: $red-800;
+}
+
+.bg-red-900 {
+  background-color: $red-900;
+}
+
+.bg-blue-50 {
+  background-color: $blue-50;
+}
+
+.bg-blue-100 {
+  background-color: $blue-100;
+}
+
+.bg-blue-200 {
+  background-color: $blue-200;
+}
+
+.bg-blue-300 {
+  background-color: $blue-300;
+}
+
+.bg-blue-400 {
+  background-color: $blue-400;
+}
+
+.bg-blue-500 {
+  background-color: $blue-500;
+}
+
+.bg-blue-600 {
+  background-color: $blue-600;
+}
+
+.bg-blue-700 {
+  background-color: $blue-700;
+}
+
+.bg-blue-800 {
+  background-color: $blue-800;
+}
+
+.bg-blue-900 {
+  background-color: $blue-900;
+}
+
+.bg-pink-50 {
+  background-color: $pink-50;
+}
+
+.bg-pink-100 {
+  background-color: $pink-100;
+}
+
+.bg-pink-200 {
+  background-color: $pink-200;
+}
+
+.bg-pink-300 {
+  background-color: $pink-300;
+}
+
+.bg-pink-400 {
+  background-color: $pink-400;
+}
+
+.bg-pink-500 {
+  background-color: $pink-500;
+}
+
+.bg-pink-600 {
+  background-color: $pink-600;
+}
+
+.bg-pink-700 {
+  background-color: $pink-700;
+}
+
+.bg-pink-800 {
+  background-color: $pink-800;
+}
+
+.bg-pink-900 {
+  background-color: $pink-900;
+}
+
+// Text alignments
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}

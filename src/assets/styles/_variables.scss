@@ -1,0 +1,176 @@
+$main-color: #61dafb;
+$main-btext-gray-color: #484848;
+$light-gray-color: #a9a9a9;
+$main-brown-color: #6d5c64;
+$main-white-color: #ededed;
+$main-pink-color: #ed81b3;
+$light-pink-color: #f9d9eb;
+$main-green-color: #a0cd73;
+$hired-green: #6CC28E;
+$dark-green-color: #43831e;
+$green-color: #86bf4d;
+$yellow-color: #ffe375;
+$footer-color: #e4dbdf;
+$dark-purple-color: #6d3c53;
+$tab-gray-color: #f4f4f4;
+$red: red;
+
+$primary-font: "Work Sans", sans-serif;
+$secondary-font: "Mulish", sans-serif;
+
+$primary: #ffadc6;
+$primary-pink: #ffcccc;
+
+$faded-pink: #fff5f5;
+$faded-pink-bg: #ffebeb;
+$dark-pink: #ff0990;
+$dark-pink-light: #ff099033;
+
+$dark-pink-hover: #e11088cc;
+$white: #fff;
+$danger: #f44336;
+$success: $dark-green-color;
+$info-color: #428eff;
+$rejected-blue: #2FB1EA;
+$warning-color: #ffc107;
+$success-200: $main-green-color;
+$black: #000;
+$primary-accent: #ff4694;
+$primary-nav: #121212;
+$primary-text: #000000;
+$primary-text-overlay: #0000001a;
+$light-pink-matte: #d87093;
+$input-focus-pink: #ffa3c7;
+$input-hover-black: #333;
+
+$secondary: #fbe6f0;
+$secondary-accent: #c2ec98;
+$secondary-error: #428eff;
+$secondary-text: #6d5c64;
+$gray-color: #767676;
+
+$tertiary: #f1f1f1;
+
+$linkedin-color: #0077b5;
+$shadow-color: #aaaaaa;
+$light-green: #c2ee99;
+$light-green-hover: #a8db76;
+$screen-min-height: calc(100vh - 120px);
+$overlay-color: #0000004d;
+$light-text: #0000008a;
+$lightest-blue: #cce7ff;
+$light-blue: #336daf;
+$transparent-blue: #2842c81a;
+$transparent-green: #bfe8e1;
+$transparent-yellow: #fde8cb;
+$transparent-white: #c9d1e447;
+$border: #aaa;
+$secondary-light-gray: #f0f0f0;
+$head-title-color: #767676;
+$posted-date-color: #63525a;
+$action-icon-color: #6d5c64;
+
+$footer-bg-color: #181818;
+$dark-box-shadow: #00000063;
+$ligh-box-shadow: #00000033;
+$black-bg-opacity: #000000f2;
+$light-black-text: #181818;
+$lighter-box-shadow: #0000003b;
+
+$pink-hover: #fcabda;
+$bg-hover: rgba(249, 230, 241, 0.278);
+$fb-bg:#5DC4B8;
+$tw-bg:#EF633E;
+$ig-bg:#EFA322;
+$border-color:#e8e8e8;
+
+// Gray color palette
+$gray-50: #f9fafb;
+$gray-75: #fcf8fa;
+$gray-100: #f3f4f6;
+$gray-110: #f9e6f1;
+$gray-120: #f6eef3;
+$gray-130: #f7f3f7;
+$gray-140: #fde3f1;
+$gray-150: #f2fbe7;
+$gray-160: #fbeff6;
+$gray-170: #fbf5f8;
+$gray-200: #e5e7eb;
+$gray-210: #e5e5f5;
+$gray-250: #b5bfc8;
+$gray-300: #d1d5db;
+$gray-310: #decad6;
+$gray-350: #c4c4c4;
+$gray-400: #9ca3af;
+$gray-450: #666666;
+$gray-500: #6b7280;
+$gray-550: #999999;
+$gray-560: #bbbbbb;
+$gray-600: #4b5563;
+$gray-700: #374151;
+$gray-800: #1f2937;
+$gray-900: #111827;
+// Ref color palette
+$red-50: #fef2f2;
+$red-100: #fee2e2;
+$red-200: #fecaca;
+$red-300: #fca5a5;
+$red-400: #f87171;
+$red-500: #ef4444;
+$red-600: #dc2626;
+$red-700: #b91c1c;
+$red-800: #991b1b;
+$red-900: #7f1d1d;
+
+// Blue color palette
+$blue: #1966dd;
+$blue-50: #eff6ff;
+$blue-100: #dbeafe;
+$blue-200: #bfdbfe;
+$blue-300: #93c5fd;
+$blue-400: #60a5fa;
+$blue-500: #3b82f6;
+$blue-600: #2563eb;
+$blue-700: #1d4ed8;
+$blue-800: #1e40af;
+$blue-900: #1e3a8a;
+
+// Green color palette
+$svg-green: #00a389;
+$green-30: #e7f2f4;
+$green-40: #e7fbef;
+$green-50: #54aa76;
+$green-100: #80cc28;
+
+// Purple color palette
+$purple-900: #31222a;
+
+// Yellow color palette
+$yellow-100: #fff6ec;
+$yellow-200: #f1ae00;
+
+// employHer Standard colors
+$pink-50: #fdf2f8;
+$pink-75: #f9e6f1;
+$pink-100: #fce7f3;
+$pink-150: #fdf1f8;
+$pink-160: #FBEBF4;
+$pink-200: #fbcfe8;
+$pink-250: #ffe8f5;
+$pink-300: #f9a8d4;
+$pink-400: #f472b6;
+$pink-500: #ec4899;
+$pink-600: #db2777;
+$pink-700: #be185d;
+$pink-800: #9d174d;
+$pink-900: #831843;
+
+
+// Font size variables
+$font-xsm: 8px;
+$font-sm: 13px;
+$font-md: 16px;
+$font-md-100: 20px;
+$font-lg: 24px;
+$font-xlg: 28px;
+$font-xxlg: 32px;

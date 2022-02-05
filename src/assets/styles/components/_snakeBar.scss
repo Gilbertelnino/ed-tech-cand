@@ -1,0 +1,10 @@
+.snackbar-wrapper {
+  .MuiSnackbarContent-message {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 8px;
+    }
+  }
+}

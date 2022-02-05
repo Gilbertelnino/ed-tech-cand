@@ -1,0 +1,136 @@
+/*
+* Classes from 1px to 20px with margin/padding top, bottom, left and right
+*/
+@for $i from 0 through 20 {
+  // Margin classes
+  .m-#{$i} {
+    margin: #{$i}px !important;
+  }
+  .mt-#{$i} {
+    margin-top: #{$i}px !important;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+
+  .ml-#{$i} {
+    margin-left: #{$i}px !important;
+  }
+
+  .mr-#{$i} {
+    margin-right: #{$i}px !important;
+  }
+
+  // Padding classes
+  .p-all-#{$i} {
+    padding: #{$i}px !important;
+  }
+
+  .pt-#{$i} {
+    padding-top: #{$i}px;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: #{$i}px !important;
+  }
+
+  .pl-#{$i} {
+    padding-left: #{$i}px;
+  }
+
+  .pr-#{$i} {
+    padding-right: #{$i}px;
+  }
+}
+
+/*
+* Classes from 25px to 50px with margin/padding top, bottom, left and right with gap of 5
+*/
+$step: 5;
+$from: ceil(25 / $step);
+$through: ceil(60 / $step);
+
+@for $i from $from through $through {
+  $i: $i * $step;
+
+  // Margin classes
+  .mt-#{$i} {
+    margin-top: #{$i}px;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+
+  .ml-#{$i} {
+    margin-left: #{$i}px;
+  }
+
+  .mr-#{$i} {
+    margin-right: #{$i}px;
+  }
+
+  // Padding classes
+  .pt-#{$i} {
+    padding-top: #{$i}px;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: #{$i}px;
+  }
+
+  .pl-#{$i} {
+    padding-left: #{$i}px;
+  }
+
+  .pr-#{$i} {
+    padding-right: #{$i}px;
+  }
+}
+
+// Height and width
+
+/*
+* Classes from height 50px to 200px with steps of 50
+*/
+$heightStep: 50;
+$heightFrom: ceil(50 / $step);
+$heightThrough: ceil(200 / $step);
+
+@for $i from $heightFrom through $heightThrough {
+  $i: $i * $step;
+
+  // weight class
+  .height-#{$i} {
+    height: #{$i}px;
+  }
+}
+
+.height-auto {
+  height: auto;
+}
+
+/*
+* Classes from 25% to 100% for width with gap of 25
+*/
+$widthStep: 25;
+$widthFrom: ceil(25 / $widthStep);
+$widthThrough: ceil(100 / $widthStep);
+
+@for $i from $widthFrom through $widthThrough {
+  $i: $i * $widthStep;
+
+  // Width classes
+  .w-#{$i} {
+    width: #{$i}#{"%"} !important;
+  }
+}
+
+.mt-95 {
+  margin-top: 95px;
+}
+
+.left-0 {
+  left: 0;
+}

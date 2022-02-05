@@ -1,0 +1,806 @@
+@import "./../variables";
+
+.Header-style {
+  font-family: $primary-font;
+  background-color: $black;
+  color: $white;
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  box-shadow: 0px 0px 9px 1px $dark-box-shadow;
+
+  .HeaderStyleButton {
+    background-color: $main-brown-color;
+    color: $white;
+    border: none;
+    padding: 8px 16px 0px 0px;
+  }
+
+  .employ {
+    font-family: $primary-font;
+    max-width: fit-content;
+    font-size: 32px;
+    margin: 0;
+  }
+
+  .Her {
+    font-family: $primary-font;
+    color: $main-pink-color;
+  }
+
+  .navLinks {
+    align-items: flex-end;
+
+    @media only screen and (max-width: 800px) {
+      font-size: 15px;
+    }
+
+    @media only screen and (max-width: 991px) {
+      margin-top: 0px;
+    }
+  }
+
+  .navLinks {
+    .nav-item {
+      transform: inherit !important;
+
+      a {
+        color: $white !important;
+        font-family: $primary-font;
+        font-size: 18px;
+        padding-top: 10px;
+        border-bottom: 3px solid transparent;
+
+        &:hover {
+          border-color: $primary-pink;
+        }
+
+        @media only screen and (max-width: 800px) {
+          font-size: 15px;
+        }
+      }
+
+      a.active {
+        border-color: $primary-pink;
+      }
+    }
+    .nav-item.active-nav{
+      a{
+        border-bottom: 3px solid $primary-pink;
+      }
+    }
+  }
+
+  .navbar-search {
+    .navbar-searchBox {
+      .MuiInputBase-root {
+        border: 2px solid $primary-accent;
+        padding-right: 10px;
+        background-color: $white;
+        border-radius: 32px;
+        min-width: 360px;
+
+        .MuiOutlinedInput-input {
+          padding: 8px;
+          height: 40px;
+          box-sizing: border-box;
+        }
+      }
+    }
+
+    .navbar-searchBoxIconContainer {
+      margin: 0;
+
+      .navbar-searchBoxIcon {
+        color: $white;
+        background-color: $primary-accent;
+        border-radius: 16px;
+        padding: 4px;
+      }
+    }
+  }
+
+  .navbar {
+    .navBrand {
+      font-size: 20px;
+      font-family: $primary-font;
+      margin: 4px 0 0;
+      color: $red-100;
+      font-weight: 400;
+
+      h1 {
+        font-weight: 700;
+        font-size: 30px;
+
+        span {
+          color: $dark-pink !important;
+        }
+
+        @media only screen and (max-width: 767px) {
+          font-size: 24px !important;
+        }
+      }
+
+      p.navbrand-tagline {
+        font-weight: 400;
+        font-size: 18px;
+        color: $tertiary !important;
+
+        span {
+          color: $dark-pink !important;
+          position: relative;
+          top: 1px;
+        }
+
+        @media only screen and (max-width: 992px) {
+          display: none !important;
+        }
+      }
+
+      //for mobile devices
+      @media only screen and (max-width: 800px) {
+        font-size: 16px;
+      }
+
+      // for iphone 5 and smaller devices
+      @media only screen and (max-width: 568px) {
+        font-size: 14px;
+      }
+
+      .navbar-brand {
+        padding: 8px 0;
+        margin: 0;
+      }
+    }
+
+    @media only screen and (max-width: 992px) {
+      padding: 10px 20px !important;
+    }
+    .navbar-collapse {
+      @media only screen and (min-width: 992px) {
+        flex-grow: inherit !important;
+      }
+    }
+  }
+
+  button.navbar-toggler {
+    border: none;
+    padding-right: 0;
+
+    .navbar-toggler-icon {
+      display: flex;
+    }
+  }
+
+  .navbar-nav {
+    align-items: center;
+
+    .profile-link {
+      button {
+        padding: 0;
+
+        svg {
+          fill: $main-brown-color;
+          height: 36px;
+          width: 36px;
+        }
+      }
+
+      .user-avatar {
+        height: 38px !important;
+        width: 38px !important;
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer;
+        border: 2px solid $primary-pink;
+      }
+
+      @media only screen and (max-width: 992px) {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .navbar-collapse {
+    @media only screen and (max-width: 992px) {
+      position: absolute;
+      top: 74px;
+      left: 0;
+      right: 0;
+      background-color: $black-bg-opacity !important;
+      padding: 10px 20px;
+      top: -165px;
+      z-index: -10;
+
+      .navbar-nav {
+        justify-content: flex-start !important;
+
+        .nav-item {
+          margin: 10px 0 !important;
+          width: 100%;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  .navbar-collapse.open {
+    top: 65px;
+
+    @media only screen and (max-width: 991px) {
+      border-top: 0.5px solid $gray-color;
+    }
+
+    @media only screen and (max-width: 767px) {
+      top: 58px;
+    }
+  }
+
+  div.dropdown-menu {
+    background-color: $black;
+    border-color: $secondary;
+  }
+
+  div.dropdown.nav-item {
+    padding: 0;
+  }
+
+  a.dropdown-item {
+    width: auto;
+  }
+
+  a.dropdown-item.active {
+    background-color: $gray-700;
+  }
+
+  a.dropdown-item:hover {
+    background-color: $dark-purple-color;
+  }
+
+  a.dropdown-toggle.nav-link {
+    padding: 0;
+    color: $black;
+  }
+
+  .NavDropDownTitle {
+    display: inline;
+
+    .dropdown-menu a {
+      margin-top: 8px;
+    }
+  }
+
+  div.dropdown-menu.show {
+    background-color: $black;
+    position: absolute;
+    right: 0;
+    left: auto;
+    width: 151px;
+    margin-top: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+
+  .header-avatar img {
+    height: 28px;
+    width: 28px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}
+
+.navbar-search {
+  position: fixed;
+  top: 48px;
+  z-index: 1000;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media only screen and (max-width: 992px) {
+    top: 36px;
+  }
+  @media only screen and (max-width: 767px) {
+    top: 30px;
+  }
+	@media only screen and (max-width: 600px) {
+		position: relative;
+		padding: 10px 15px;
+    transform: unset;
+    left: inherit;
+    top: 0px;
+		background-color:$faded-pink;
+    z-index: 99;
+  }
+  .navbar-searchBox {
+    .MuiInputBase-root {
+      border: 2px solid $primary-accent;
+      padding-right: 1px;
+      background-color: $white;
+      border-radius: 32px;
+      min-width: 360px;
+      @media only screen and (max-width: 767px) {
+        min-width: 300px;
+      }
+      @media only screen and (max-width:330px) {
+        min-width: 290px;
+      }
+      .MuiOutlinedInput-input {
+        padding: 8px;
+        height: 40px !important;
+        box-sizing: border-box;
+      }
+      fieldset {
+        display: none;
+      }
+    }
+  }
+
+  .navbar-searchBoxIconContainer {
+    margin: 0;
+
+    .navbar-searchBoxIcon {
+      color: $white;
+      background-color: $primary-accent;
+      border-radius: 16px;
+      padding: 4px;
+    }
+  }
+}
+
+.navbar-search-redesign {
+  position: absolute;
+  top: 48px;
+  z-index: 1000;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media only screen and (max-width: 992px) {
+    top: 36px;
+  }
+  @media only screen and (max-width: 767px) {
+    top: 30px;
+  }
+	@media only screen and (max-width: 600px) {
+		position: relative;
+		padding: 10px 15px;
+    transform: unset;
+    left: inherit;
+    top: 0px;
+		background-color:$faded-pink;
+    z-index: 99;
+  }
+  .navbar-searchBox {
+    .MuiInputBase-root {
+      border: 1px solid $pink-75;
+      padding-right: 1px;
+      background-color: $white;
+      border-radius: 6px;
+      min-width: 360px;
+      @media only screen and (max-width: 767px) {
+        min-width: 300px;
+      }
+      @media only screen and (max-width:330px) {
+        min-width: 290px;
+      }
+      .MuiOutlinedInput-input {
+        padding: 12px;
+        height: 40px !important;
+        box-sizing: border-box;
+      }
+      fieldset {
+        display: none;
+      }
+    }
+  }
+
+  .navbar-searchBoxIconContainer {
+    margin: 0;
+
+    .navbar-searchBoxIcon {
+      color: $primary-accent;
+      background-color: $white;
+      font-size: 30px;
+    }
+  }
+}
+
+.search-modal-container {
+  padding: 0 !important;
+  max-width: 370px !important;
+  border: none !important;
+  position: absolute !important;
+  top: 86px !important;
+  border-radius: 0 0 8px 8px !important;
+  &:focus-visible {
+    outline: none !important;
+  }
+  @media only screen and (max-width: 992px) {
+    top: 18px !important;
+  }
+  @media only screen and (max-width: 767px) {
+    top: 12px !important;
+  }
+  @media only screen and (max-width: 600px) {
+    top: 68px !important;
+    width: 95% !important;
+    min-width: 95% !important;
+    margin: 0 !important;
+  }
+  @media only screen and (max-width: 330px) {
+    width: 92% !important;
+    min-width: 92% !important;
+  }
+  .MuiDialog-paper {
+    border-radius: 32px;
+    min-width: 360px;
+    border: none !important;
+  }
+
+  .search-modal-header {
+    position: fixed;
+    top: 52px;
+    z-index: 1000;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: $white;
+    transform: translate(-50%, -50%);
+    border-bottom: 1px solid $pink-75;
+    border-radius: 10px 10px 0 0;
+    max-width: 371px;
+    box-sizing: border-box;
+    @media only screen and (max-width: 992px) {
+      top: 36px;
+    }
+    @media only screen and (max-width: 767px) {
+      top: 30px;
+    }
+    @media only screen and (max-width: 600px) {
+      position: relative;
+      padding: 10px 15px;
+      transform: unset;
+      left: inherit;
+      top: 0px;
+      background-color:$faded-pink;
+      z-index: 99;
+    }
+      .navbar-searchBox-close {
+        padding: inherit;
+        position: relative;
+        left: 8px; 
+        cursor: pointer;
+      }
+    }
+    .devider{
+      display: none;
+    }
+    .navbar-searchBox {
+      .MuiInputBase-root {
+        border: 1px solid $pink-75;
+        padding-right: 1px;
+        background-color: $white;
+        border-radius: 6px;
+        min-width: 300px;
+        padding-left: 8px;
+        @media only screen and (max-width: 767px) {
+          min-width: 300px;
+        }
+        @media only screen and (max-width:330px) {
+          min-width: 290px;
+        }
+        .MuiOutlinedInput-input {
+          padding: 12px;
+          height: 40px !important;
+          box-sizing: border-box;
+        }
+        fieldset {
+          display: none;
+        }
+      }
+    }
+  
+    .navbar-searchBoxIconContainer {
+      margin: 0;
+  
+      .navbar-searchBoxIcon {
+        color: $primary-accent;
+        background-color: $white;
+        font-size: 30px;
+      }
+    }
+  }
+
+  .search-loading {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 60px;
+  }
+
+  .search-modal-content {
+    padding: 15px 25px 0 25px;
+    margin-top: 55px;
+    .result-not-found {
+      text-align: center;
+      margin: 20px;
+      margin-top: 50px;
+      color: $gray-350;
+      font-family: $secondary-font !important;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .result-type-and-count {
+      display: flex;
+      justify-content: space-between;
+      .result-type {
+        text-align: left;
+        margin: 0;
+        color: $gray-550;
+        font-family: $secondary-font !important;
+        font-size: 15px;
+        margin-bottom: 10px;  
+        font-weight: 600;
+      }
+      .result-count {
+        text-align: left;
+        margin: 0;
+        font-weight: 600;
+        color: $primary-accent !important;
+        font-family: $secondary-font !important;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+
+    .search-result-note {
+      text-align: center;
+      margin: 20px;
+      color: $gray-350;
+      font-family: $secondary-font !important;
+      font-size: 13px;
+      position: relative;
+      top: -40px;
+    }
+
+    .search-data-details {
+      padding: 10px;
+      border-radius: 20px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0px 8px 42px 0px rgba(201, 209, 228, 0.28);
+      border-radius: 8px;
+      background-color: $white;
+      border: 1px solid transparent;
+        &:hover{
+          background-color:$pink-50;
+          border: 1px solid $pink-100;
+        }
+      .search-data-details-left-wrapper {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        font-family: $secondary-font !important;
+        .search-data-details-left {
+          padding: 0 5px;
+          height: initial;
+          width: initial;
+          border-radius: 50%;
+          overflow: hidden;
+            .user-avatar{
+                height: 50px !important;
+                width: 50px !important;
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+                span{
+                  font-size: 22px !important;
+                   font-weight: 500 !important;
+                }
+            }
+        }
+
+        .search-data-details-middle {
+          text-align: left;
+          padding: 5px;
+          padding-left: 10px;
+
+          h4,
+          p {
+            margin: 0;
+            font-family: $secondary-font !important;
+          }
+          h4 {
+            font-size: 14px !important;
+          }
+          p {
+            font-size: 11px;
+          }
+        }
+      }
+      .search-data-details-right {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        svg {
+          fill: $gray-350;
+          width: 12px;
+          height: 18px;
+        }
+      }
+    }
+    .search-articles {
+      .search-data-details {
+        .search-data-details-left-wrapper {
+          .search-data-details-left {
+            height: 50px;
+            width: 80px;
+          }
+          .search-data-details-middle {
+            h4 {
+              font-size: 14px;
+              font-weight: 600;
+            }
+            p {
+            }
+          }
+        }
+      }
+    }
+    hr {
+      height: 1px;
+      width: 100%;
+      margin: 10px 0 12px 0;
+      border: none !important;
+      background-color: $tab-gray-color !important;
+    }
+  }
+
+  .devider {
+    margin-bottom: 10px;
+    width: 99.5%;
+    height: 5px;
+    border: 1px solid $tab-gray-color;
+  }
+
+  .modal-result-container {
+    padding: 16px;
+  }
+
+  .search-modal-footer {
+    padding: 0 15px 25px 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    .all-result-button {
+      width: 200px;
+      height: 40px !important;
+      background-color: $primary-accent;
+      box-shadow: none;
+      border-radius: 4px !important;
+      .MuiButton-label {
+        font-size: 14px;
+        text-transform: none;
+      }
+    }
+  }
+
+.search-modal-container.modal-result-container {
+  top: 30px !important;
+  @media only screen and (max-width: 992px) {
+    top: 18px !important;
+  }
+  @media only screen and (max-width: 750px) {
+   top: 13px !important;
+  }
+  @media only screen and (max-width: 600px) {
+    top: 68px !important;
+   }
+}
+
+.profile-menu-option-wrapper {
+  .MuiMenu-paper {
+    @media only screen and (min-width: 992px) {
+      top: 68px !important;
+    }
+
+    @media only screen and (max-width: 991px) {
+      top: 156px !important;
+    }
+
+    padding: 0 !important;
+    width: 245px;
+    border-radius: 8px;
+
+    ul.MuiMenu-list {
+      padding: 0 12px !important;
+      width: 222px !important;
+    }
+
+    ul {
+      li {
+        padding: 4px 0px !important;
+        min-height: inherit;
+        font-family: $primary-font;
+
+        &:last-child {
+          border-top: 1px solid $dark-pink;
+          margin: 5px 0;
+          padding-top: 12px !important;
+        }
+
+        &:hover {
+          background-color: transparent;
+          color: $dark-pink;
+        }
+
+        span.MuiTouchRipple-root span {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
+
+.profile-box-wrapper {
+  .pb-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: $primary-pink;
+    margin: 0 -13px;
+    margin-bottom: 8px;
+
+    .pb-user-avatar {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid $primary-accent;
+      cursor: pointer;
+      img.profile-image {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .pb-control {
+      padding-left: 8px;
+      margin-left: 10px;
+      border-left: 2px solid $white;
+
+      h5 {
+        font-size: 16px;
+        margin: 0 0 5px 0;
+        text-align: center;
+        font-family: $secondary-font !important;
+        width: 158px;
+        text-transform: capitalize;
+      }
+
+      .pb-control-btns {
+        display: flex;
+        justify-content: center;
+
+        .btn-small {
+          margin: 0 5px;
+          font-size: 12px;
+          width: 110px;
+          padding: 3px 7px;
+          background: transparent;
+        }
+      }
+    }
+  }
+}

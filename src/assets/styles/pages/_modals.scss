@@ -1,0 +1,98 @@
+.createVid {
+  background-color: $main-pink-color;
+  border-radius: 5%;
+}
+
+.uploadVid {
+  background-color: $white;
+  border: 1px solid $main-pink-color;
+  border-radius: 5%;
+}
+
+.companyModal {
+  border: 10px solid $white;
+  background-color: $primary-pink;
+  width: 900px;
+}
+
+.jobModal {
+  width: 951px;
+  height: 537px;
+  background: $faded-pink;
+  border: 1px solid rgba(237, 129, 179, 0.3);
+  box-sizing: border-box;
+}
+
+.jobModal1 {
+  width: 951px;
+  background: $faded-pink;
+  border: 1px solid rgba(237, 129, 179, 0.3);
+  box-sizing: border-box;
+  min-height: 200px;
+}
+
+.jobModal2 {
+  position: center;
+  width: 779px;
+  height: 359px;
+  background: $faded-pink;
+  vertical-align: center;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.profileReviewModal {
+  @extend .jobModal2;
+  height: fit-content;
+  overflow-y: auto;
+  background-color: $secondary;
+}
+
+.profileModalWide {
+  width: 951px;
+  background: rgba(196, 196, 196, 1);
+  border: 1px solid rgba(237, 129, 179, 0.3);
+  overflow-y: auto;
+  border-radius: 8px;
+}
+
+.jobDescriptionModal {
+  padding: 0;
+  max-width: 1187px;
+  width: 1000px;
+  height: 537px;
+  background: $secondary;
+  border: none;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.centeringJobModal2 {
+  min-width: fit-content;
+  padding-top: 100px;
+  text-align: "center";
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  background-color: $faded-pink;
+  background: $faded-pink;
+}
+
+.profileVideoModal {
+  // modal used to view video in profile preview
+  max-width: 1234px;
+  width: 1052px;
+  padding: 88px;
+  background-color: $faded-pink;
+  height: 700px;
+
+  //pointer-events:none;
+  .videoPlayerStyle {
+    pointer-events: none;
+    height: 700px; //change height in profileVideo Modal to +10 px as well
+  }
+}

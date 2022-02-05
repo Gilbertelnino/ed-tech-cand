@@ -1,0 +1,145 @@
+#jobItemCard {
+  margin: 10px;
+
+  .imgMargins {
+    float: right;
+    padding-right: 11px;
+    min-width: 40px;
+  }
+
+  .ContainerCardStyle {
+    background-color: $faded-pink-bg;
+    box-shadow: 2px;
+    transition: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 287px;
+    padding-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+
+    .jobBasicDetails {
+      .jobTitle {
+        margin-top: 45px;
+        font-family: $primary-font;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 24px;
+      }
+
+      .jobImage {
+        float: right;
+        padding-right: 11px;
+      }
+
+      .jobDescription {
+        font-family: $secondary-font;
+        font-weight: normal;
+        margin-top: 10px;
+        font-size: 16px;
+        color: $secondary-text;
+        padding-right: 20px;
+      }
+
+      .jobLocation {
+        margin-top: 9px;
+        margin-bottom: -3px;
+        font-weight: normal;
+        font-size: 14px;
+        text-transform: capitalize;
+      }
+    }
+
+    .jobPosted {
+      position: absolute;
+      bottom: 15px;
+      right: 60px;
+      font-family: $secondary-font;
+      font-size: 14px;
+
+      color: $secondary-text;
+    }
+
+    @media only screen and (min-width: 414px) and (max-width: 768px) {
+      padding-top: 20px;
+      height: 230px;
+      margin-top: 10px;
+    }
+  }
+
+  .ContainerCardStyle:hover {
+    box-shadow: 0px 0px 15px 3px $shadow-color;
+  }
+}
+
+// container ends here
+
+.jobPost {
+  box-shadow: 10px 10px 5px $shadow-color;
+  padding: 5px;
+}
+
+.jobSection {
+  padding: 5px;
+  margin-bottom: 32px;
+  margin-bottom: 30px;
+
+  .rowAlignment {
+    margin: 0px;
+  }
+
+  .col-md-4 {
+    padding: 0px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .rowAlignment {
+      justify-content: center;
+    }
+
+    .col-md-4 {
+      flex: 0 0 80%;
+      max-width: 80%;
+    }
+  }
+}
+
+.jobCard1 :hover {
+  border-color: plum !important;
+  border-width: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardSection {
+  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-left: 10px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+.inLineBlock {
+  display: inline;
+}
+
+.time {
+  padding-left: 0;
+  font: size 0.5;
+  color: $gray-color;
+}
+
+.Location {
+  color: $gray-color;
+  font: size 1;
+}
+
+.Blue {
+  color: $lightest-blue;
+  font-style: bold;
+  float: right;
+  text-align: right;
+}

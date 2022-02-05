@@ -1,0 +1,74 @@
+// Horizontal and Vertical center
+.hv-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.primary-btn {
+  width: 135px;
+  height: 40px;
+  background-color: $dark-pink !important;
+  color: $white !important;
+  text-transform: uppercase !important;
+  border: none;
+  border-radius: 30px !important;
+  font-size: 12pt !important;
+  font-weight: 600 !important;
+
+  span {
+    font-family: $primary-font !important;
+    font-size: 13px;
+    line-height: 40px;
+  }
+
+  &:hover {
+    background-color: $dark-pink-hover !important;
+    text-decoration: none;
+  }
+}
+
+.no-style-button {
+  background: transparent;
+  height: auto;
+  width: auto;
+  box-shadow: none;
+  border-radius: 50%;
+
+  &:hover {
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.pink-text {
+  color: $dark-pink !important;
+}

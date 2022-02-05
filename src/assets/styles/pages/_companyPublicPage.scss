@@ -1,0 +1,1526 @@
+#root {
+  background-color: $white;
+
+  .company-wrapper {
+    padding-top: 87px !important;
+
+    @media only screen and (max-width: 992px) {
+      padding-top: 70px !important;
+    }
+
+    @media only screen and (max-width: 767px) {
+      padding-top: 60px !important;
+    }
+
+    .container-fluid {
+      .row {
+        background-color: $tertiary;
+
+        .company-content {
+          background-color: $secondary;
+
+          h1 {
+            padding: 75px;
+          }
+
+          .PublicPageWrapper {
+            margin: 20px;
+
+            .container {
+              .company-menus {
+                background-color: $secondary;
+
+                .nav {
+                  .nav-item {
+                    margin: 20px;
+                    border-bottom: none !important;
+
+                    .active {
+                      color: $primary-accent !important;
+                      border-bottom: 3px solid $primary-accent;
+                      font-weight: bold !important;
+                    }
+
+                    .nav-link {
+                      font-family: $primary-font;
+                      font-style: normal;
+                      font-weight: normal;
+                      font-size: 20px;
+                      line-height: 27px;
+                      color: $primary-nav;
+                    }
+                  }
+                }
+
+                .action-button-wrapper {
+                  line-height: 70px;
+
+                  .publish-btn {
+                    background: $secondary-accent;
+                    border-radius: 3px;
+                    padding: 4px 20px 4px 20px;
+                    color: $primary-nav;
+                    border: none;
+
+                    svg {
+                      padding-right: 4px;
+                    }
+                  }
+
+                  .save-btn {
+                    margin-left: 10px;
+                    background: transparent;
+                    border-radius: 3px;
+                    padding: 4px 20px 4px 20px;
+                    color: $primary-nav;
+                    border-color: $primary-nav;
+
+                    svg {
+                      padding-right: 4px;
+                    }
+                  }
+
+                  .preview-btn {
+                    background: transparent;
+                    color: $primary-accent;
+                    border: none;
+                    margin-right: 15px;
+
+                    &:focus {
+                      box-shadow: none;
+                    }
+                  }
+                }
+              }
+
+              .company-menu-content {
+                background-color: $secondary;
+
+                .tab-content {
+                  width: 100%;
+
+                  .public-page-form {
+                    .row {
+                      margin-bottom: 10px;
+
+                      .form-group {
+                        .form-label {
+                          font-family: $primary-font;
+                          font-style: normal;
+                          font-weight: 600;
+                          font-size: 13px;
+                          line-height: 20px;
+                          letter-spacing: 0.8px;
+                          color: $primary-text;
+
+                          .required:after {
+                            content: " *";
+                            color: $red;
+                          }
+                        }
+
+                        .error-message {
+                          color: $red;
+                          font-size: 13px;
+                        }
+
+                        .ap-input {
+                          border: 1px solid $gray-300 !important;
+                        }
+                      }
+
+                      background-color: $secondary;
+
+                      textarea {
+                        background-color: $secondary;
+
+                        &:focus {
+                          box-shadow: 0 0 0 3.2px $primary;
+                          border-color: $primary;
+                        }
+                      }
+
+                      input {
+                        background-color: $secondary;
+
+                        &:focus {
+                          box-shadow: 0 0 0 3.2px $primary;
+                          border-color: $primary;
+                        }
+                      }
+
+                      select {
+                        background-color: $secondary;
+
+                        &:focus {
+                          box-shadow: 0 0 0 3.2px $primary;
+                          border-color: $primary;
+                        }
+                      }
+
+                      input[type="file"] {
+                        display: none;
+                      }
+
+                      .ProfileVideo {
+                        text-align: center;
+
+                        .form-file-label {
+                          border: 1px solid $primary-nav;
+                          border-radius: 3px;
+                          background-color: $secondary-text;
+                          color: $white;
+                          display: inline-block;
+                          padding: 6px 12px;
+                          cursor: pointer;
+                          text-align: center;
+                        }
+                      }
+
+                      .profile-banner-wrapper {
+                        .ProfileBanner {
+                          background-color: $secondary;
+                        }
+
+                        .profile-previewed {
+                          padding: 0 !important;
+                        }
+
+                        .form-file-label {
+                          border: 1px solid $primary-accent;
+                          display: inline-block;
+                          padding: 96px;
+                          cursor: pointer;
+                          width: 100%;
+                          text-align: center;
+
+                          .fa-plus {
+                            font-size: 10px;
+                            color: $secondary-text;
+                          }
+
+                          .add-profile-label {
+                            color: $secondary-text;
+                            margin-left: 5px;
+                          }
+
+                          .profile-preview {
+                            width: 100%;
+                            height: 180px;
+                          }
+                        }
+                      }
+
+                      .her-profile-wrapper {
+                        .form-file-label {
+                          padding: 40%;
+                          background: $tertiary;
+                          border: 1px solid $main-brown-color;
+                          box-sizing: border-box;
+                          border-radius: 50px;
+                          cursor: pointer;
+                          text-align: center;
+                          width: 80px;
+                          height: 80px;
+                          position: relative;
+
+                          .fa-plus {
+                            font-size: 10px;
+                            color: $secondary-text;
+                          }
+                        }
+
+                        .HerProfile {
+                          text-align: center;
+                        }
+                      }
+
+                      .her-video-wrapper {
+                        .HerVideo {
+                          text-align: center;
+                        }
+
+                        .form-file-label {
+                          padding: 25%;
+                          background: $tertiary;
+                          border: 1px solid $main-brown-color;
+                          box-sizing: border-box;
+                          border-radius: 3px;
+                          cursor: pointer;
+                          text-align: center;
+                          width: 100%;
+                          height: 40px;
+
+                          .fa-cloud-upload {
+                            font-size: 18px;
+                            color: $secondary-text;
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  .people-wrapper {
+                    .container {
+                      .row {
+                        background-color: $secondary !important;
+
+                        .people-content {
+                          text-align: center;
+
+                          .people-card-wrapper {
+                            text-align: center;
+
+                            .people-card {
+                              padding: 2%;
+                              margin: 2%;
+
+                              .profile-picture {
+                                border: 1px solid $primary;
+                                border-radius: 50%;
+                                height: 100px;
+                                width: 100px;
+                              }
+
+                              .profile-name {
+                                font-family: $secondary-font;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 17px;
+                                color: $secondary-text;
+                                line-height: 10px;
+                              }
+
+                              .profile-designation {
+                                font-family: $secondary-font;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                color: $secondary-text;
+                              }
+
+                              .action-btn-wrapper {
+                                display: flex;
+                                justify-content: center;
+
+                                .edit-btn {
+                                  background: transparent;
+                                  color: $primary-accent;
+                                  border: none;
+                                  font-weight: 600;
+
+                                  &:focus {
+                                    box-shadow: none;
+                                  }
+                                }
+
+                                .delete-btn {
+                                  background: transparent;
+                                  color: $primary-accent;
+                                  border: none;
+                                  font-weight: 600;
+
+                                  &:focus {
+                                    box-shadow: none;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  .jobs-wrapper {
+                    .container {
+                      .row {
+                        background-color: $secondary !important;
+
+                        .add-new-job {
+                          .add-new-job-btn {
+                            background: transparent;
+                            text-transform: uppercase;
+                            color: $primary-text;
+                            border: none;
+                          }
+
+                          .fa-plus-circle {
+                            color: $primary-accent;
+                          }
+                        }
+
+                        .jobs-content {
+                          .job-card-wrapper {
+                            .job-card {
+                              padding: 6% 8% 6% 8%;
+                              margin: 2%;
+                              background-color: $white;
+
+                              .card-action-header {
+                                display: flex;
+                                justify-content: space-between;
+
+                                .action-btn-wrapper {
+                                  .thumbtack-btn {
+                                    background: transparent;
+                                    border: none;
+
+                                    .fa-thumb-tack {
+                                      transform: rotate(320deg);
+                                      color: $black;
+                                    }
+                                  }
+
+                                  .edit-btn {
+                                    background: transparent;
+                                    color: $primary-accent;
+                                    border: none;
+                                    font-weight: 500;
+
+                                    &:focus {
+                                      box-shadow: none;
+                                    }
+                                  }
+
+                                  .delete-btn {
+                                    background: transparent;
+                                    color: $primary-accent;
+                                    border: none;
+                                    font-weight: 500;
+
+                                    &:focus {
+                                      box-shadow: none;
+                                    }
+                                  }
+                                }
+
+                                .logo-wrapper {
+                                  text-align: right !important;
+
+                                  .company-logo {
+                                    border: 1px solid $primary;
+                                    border-radius: 5%;
+                                    height: 50px;
+                                    width: 50px;
+                                  }
+                                }
+                              }
+
+                              .job-title {
+                                font-family: $primary-font;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 24px;
+                                color: $secondary-text;
+                                line-height: 10px;
+                              }
+
+                              .company-name {
+                                font-family: $secondary-font;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 16px;
+                                line-height: 18px;
+                              }
+
+                              .job-description {
+                                font-family: $secondary-font;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 17px;
+                                line-height: 21px;
+                                color: $posted-date-color;
+                              }
+
+                              .job-location {
+                                font-family: $secondary-font;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                color: $secondary-text;
+                              }
+
+                              .job-posted-date {
+                                font-family: monospace;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 14px;
+                                line-height: 30px;
+                                text-align: right;
+                                color: $posted-date-color;
+                              }
+
+                              &:hover {
+                                box-shadow: 0px 0px 15px 3px $shadow-color;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .CandidatesPageWrapper {
+            margin: 20px;
+
+            .container {
+              .candidate-filter {
+                background-color: $secondary;
+
+                .nav {
+                  .nav-item {
+                    margin: 20px;
+                    border-bottom: none !important;
+
+                    .active {
+                      color: $primary-accent !important;
+                      border-bottom: 3px solid $primary-accent;
+                      font-weight: bold !important;
+                    }
+
+                    .nav-link {
+                      font-family: $primary-font;
+                      font-style: normal;
+                      font-weight: normal;
+                      font-size: 20px;
+                      line-height: 27px;
+                      color: $primary-nav;
+                    }
+                  }
+                }
+
+                .action-button-wrapper {
+                  line-height: 70px;
+
+                  .new-btn {
+                    background: $secondary-accent;
+                    border-radius: 3px;
+                    padding: 4px 20px 4px 20px;
+                    color: $primary-nav;
+                    border: none;
+
+                    svg {
+                      padding-right: 4px;
+                    }
+                  }
+
+                  .search-btn {
+                    margin-left: 10px;
+                    background: transparent;
+                    border-radius: 3px;
+                    padding: 4px 20px 4px 20px;
+                    color: $primary-nav;
+                    border-color: transparent;
+
+                    .fa-search {
+                      color: $primary-accent;
+                      font-size: 24px;
+                    }
+
+                    &:focus {
+                      box-shadow: none;
+                    }
+                  }
+
+                  .close-btn {
+                    color: $light-gray-color;
+                    position: absolute;
+                    border: 0;
+
+                    .fa-close {
+                      margin-right: 5px;
+                    }
+
+                    &:hover {
+                      background-color: transparent !important;
+                    }
+
+                    &:focus {
+                      background-color: transparent !important;
+                      box-shadow: none;
+                    }
+                  }
+
+                  .form-inline {
+                    margin: 20px;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    input {
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+            }
+
+            .company-candidates-cards {
+              width: 100%;
+              overflow: scroll;
+              max-height: 500px;
+              width: 100%;
+
+              .card {
+                background: none;
+                border: none;
+                border-radius: 0;
+
+                &:hover {
+                  background-color: $primary;
+                }
+
+                h3 {
+                  float: left;
+                  font-family: $primary-font;
+                }
+
+                img {
+                  border-radius: 50%;
+                  max-width: 100px;
+                  max-height: 100px;
+                  margin-left: 30px;
+                }
+
+                .message-btn {
+                  background: none;
+                  border-color: $primary-accent;
+                  color: $primary-accent;
+                  margin-top: 30px;
+                  font-family: $secondary-font;
+                  width: 150px;
+                }
+
+                svg {
+                  margin-left: 20px;
+                  margin-bottom: 9px;
+                }
+
+                svg:hover {
+                  fill: $posted-date-color;
+                }
+              }
+            }
+          }
+
+          .JobsPageWrapper {
+            margin: 20px;
+
+            .container {
+              .job-filter {
+                background-color: $secondary;
+
+                .nav {
+                  .nav-item {
+                    margin: 20px;
+                    border-bottom: none !important;
+
+                    .active {
+                      color: $primary-accent !important;
+                      border-bottom: 3px solid $primary-accent;
+                      font-weight: bold !important;
+                    }
+
+                    .nav-link {
+                      font-family: $primary-font;
+                      font-style: normal;
+                      font-weight: normal;
+                      font-size: 20px;
+                      line-height: 27px;
+                      color: $primary-nav;
+                    }
+                  }
+                }
+
+                .action-button-wrapper {
+                  line-height: 70px;
+
+                  .new-btn {
+                    background: $secondary-accent;
+                    border-radius: 3px;
+                    padding: 4px 20px 4px 20px;
+                    color: $primary-nav;
+                    border: none;
+
+                    svg {
+                      padding-right: 4px;
+                    }
+                  }
+
+                  .search-btn {
+                    margin-left: 10px;
+                    background: transparent;
+                    border-radius: 3px;
+                    padding: 4px 20px 4px 20px;
+                    color: $primary-nav;
+                    border-color: transparent;
+
+                    .fa-search {
+                      color: $primary-accent;
+                      font-size: 24px;
+                    }
+
+                    &:focus {
+                      box-shadow: none;
+                    }
+                  }
+
+                  .close-btn {
+                    color: $light-gray-color;
+                    position: absolute;
+                    border: 0;
+
+                    .fa-close {
+                      margin-right: 5px;
+                    }
+
+                    &:hover {
+                      background-color: transparent !important;
+                    }
+
+                    &:focus {
+                      background-color: transparent !important;
+                      box-shadow: none;
+                    }
+                  }
+
+                  .form-inline {
+                    margin: 20px;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    input {
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+            }
+
+            .company-jobs-list {
+              width: 100%;
+              max-height: 500px;
+              overflow: scroll;
+
+              .company-jobs-table {
+                width: 100% !important;
+                background: none;
+
+                th {
+                  color: $primary-accent;
+                  font-family: $secondary-font;
+                }
+
+                .company-jobs-list-tr {
+                  &:hover {
+                    background-color: $primary;
+                  }
+                }
+              }
+
+              .company-jobs-actions {
+                background: none;
+                border: none;
+                padding: 0;
+              }
+
+              #actions-tooltip {
+                background-color: $white;
+                color: $black;
+              }
+            }
+          }
+
+          .AdminsPageWrapper {
+            margin: 20px;
+
+            .container {
+              .admin-filter {
+                background-color: $secondary;
+
+                .nav {
+                  .nav-item {
+                    margin: 20px;
+                    border-bottom: none !important;
+
+                    .active {
+                      color: $primary-accent !important;
+                      border-bottom: 3px solid $primary-accent;
+                      font-weight: bold !important;
+                    }
+
+                    .nav-link {
+                      font-family: $primary-font;
+                      font-style: normal;
+                      font-weight: normal;
+                      font-size: 20px;
+                      line-height: 27px;
+                      color: $primary-nav;
+                    }
+                  }
+                }
+
+                .action-button-wrapper {
+                  line-height: 70px;
+
+                  .new-btn {
+                    background: $secondary-accent;
+                    border-radius: 3px;
+                    padding: 4px 20px 4px 20px;
+                    color: $primary-nav;
+                    border: none;
+
+                    svg {
+                      padding-right: 4px;
+                    }
+
+                    &:focus {
+                      box-shadow: none;
+                    }
+                  }
+
+                  .search-btn {
+                    margin-left: 10px;
+                    background: transparent;
+                    border-radius: 3px;
+                    padding: 4px 20px 4px 20px;
+                    color: $primary-nav;
+                    border-color: transparent;
+
+                    .fa-search {
+                      color: $primary-accent;
+                      font-size: 24px;
+                    }
+
+                    &:focus {
+                      box-shadow: none;
+                    }
+                  }
+
+                  .close-btn {
+                    color: $light-gray-color;
+                    position: absolute;
+                    border: 0;
+
+                    .fa-close {
+                      margin-right: 5px;
+                    }
+
+                    &:hover {
+                      background-color: transparent !important;
+                    }
+
+                    &:focus {
+                      background-color: transparent !important;
+                      box-shadow: none;
+                    }
+                  }
+
+                  .form-inline {
+                    margin: 20px;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    input {
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+
+              .admin-content {
+                background-color: $secondary !important;
+
+                .admin-card-wrapper {
+                  padding: 1%;
+
+                  .admin-card {
+                    background-color: $white;
+                    padding: 5%;
+
+                    .profile-wrapper {
+                      display: flex;
+                      justify-content: space-between;
+
+                      .admin-profile {
+                        border: 1px solid $primary;
+                        border-radius: 50%;
+                        height: 70px;
+                        width: 70px;
+                      }
+
+                      .name-designation-wrapper {
+                        margin-right: 20%;
+
+                        .admin-name {
+                          font-family: $secondary-font;
+                          font-style: normal;
+                          font-weight: 600;
+                          font-size: 18px;
+                          margin-bottom: 0;
+                        }
+                      }
+
+                      .action-btn-wrapper {
+                        text-align: right;
+
+                        .action-btn {
+                          margin-bottom: 8px;
+                        }
+
+                        .profile-btn {
+                          background: $secondary;
+                          border-radius: 3px;
+                          padding: 4px 22px 4px 22px;
+                          color: $primary-accent;
+                          border: none;
+                        }
+
+                        .message-btn {
+                          background: transparent;
+                          border-radius: 3px;
+                          padding: 4px 16px 4px 16px;
+                          color: $primary-accent;
+                          border: 1px solid $secondary;
+                        }
+                      }
+                    }
+
+                    .activity-wrapper {
+                      ul {
+                        li {
+                          margin: 2%;
+                        }
+                      }
+
+                      .created_at {
+                        color: $secondary-text;
+
+                        &::before {
+                          content: "\a";
+                          white-space: pre;
+                        }
+                      }
+                    }
+
+                    .view-history-remove-admin-btn {
+                      .action-btn-wrapper {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .view-history-btn {
+                          background: transparent;
+                          color: $primary-accent;
+                          border: none;
+
+                          &:focus {
+                            box-shadow: none;
+                          }
+                        }
+
+                        .remove-admin-btn {
+                          background: transparent;
+                          color: $secondary-text;
+                          border: none;
+
+                          &:focus {
+                            box-shadow: none;
+                          }
+                        }
+                      }
+                    }
+
+                    &:hover {
+                      box-shadow: 0px 0px 15px 3px $shadow-color;
+                    }
+                  }
+                }
+              }
+
+              .pagination {
+                background-color: $secondary !important;
+              }
+            }
+          }
+        }
+
+        .company-left-menus {
+          .nav-item {
+            margin: 20%;
+
+            .right-active-border {
+              position: absolute;
+              font-size: 80px;
+              margin-left: 64%;
+              line-height: 40px;
+              color: $primary-accent;
+            }
+
+            .right-active-border:after {
+              content: "|";
+            }
+
+            .active {
+              color: $primary-accent !important;
+            }
+
+            .menu-text {
+              font-family: $secondary-font;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 21px;
+              color: $secondary-text;
+              margin: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    .mrb-5 {
+      margin-bottom: 5px;
+    }
+
+    .mrt-5 {
+      margin-top: 5px;
+    }
+  }
+
+  .company-profile-wrapper {
+    .container-fluid {
+      .company-content {
+        .banner-row {
+          border-bottom: 2px solid $primary;
+        }
+
+        .play-video {
+          text-align: center;
+
+          .play-video-icon {
+            height: 100px;
+            width: 100px;
+            position: relative;
+            margin-top: -55px;
+            background-color: $white;
+          }
+        }
+
+        .row {
+          .banner {
+            .company-banner-img {
+              width: 100%;
+              height: 300px;
+            }
+          }
+
+          .logo-text {
+            font-family: $primary-font;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 38px;
+            margin-top: 1%;
+          }
+
+          .address-n-followers {
+            font-family: $secondary-font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 26px;
+          }
+
+          .site-url {
+            font-family: $secondary-font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+          }
+
+          .company-menus {
+            padding: 1%;
+
+            .nav {
+              width: 100%;
+
+              .nav-item {
+                margin: 0% 2%;
+                border-bottom: none !important;
+
+                .active {
+                  color: $primary-nav !important;
+                  border-bottom: 3px solid $primary-accent;
+                  font-weight: bold !important;
+                }
+
+                .nav-link {
+                  font-family: $primary-font;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 20px;
+                  line-height: 27px;
+                  color: $primary-nav;
+                }
+              }
+            }
+          }
+
+          .company-menu-content {
+            .tab-content {
+              width: 100%;
+
+              .row {
+                margin: 2% 0% 2% 0%;
+
+                .mission-card {
+                  background-color: $tertiary;
+                  padding: 2% 3% 3% 3%;
+
+                  .mission-and-vision {
+                    h3 {
+                      font-family: $secondary-font;
+                      font-style: normal;
+                      font-weight: 600;
+                      font-size: 18px;
+                    }
+
+                    p {
+                      font-family: $secondary-font;
+                      font-style: normal;
+                      font-weight: normal;
+                      font-size: 16px;
+                    }
+                  }
+                }
+
+                .diversity-card {
+                  background-color: $light-pink-color;
+                  padding: 2% 3% 3% 3%;
+
+                  .diversity-and-inclusion {
+                    h3 {
+                      font-family: $secondary-font;
+                      font-style: normal;
+                      font-weight: 600;
+                      font-size: 18px;
+                      text-align: right;
+                    }
+
+                    p {
+                      font-family: $secondary-font;
+                      font-style: normal;
+                      font-weight: normal;
+                      font-size: 16px;
+                    }
+                  }
+                }
+
+                .our-her-leaders {
+                  .her-leader-title {
+                    font-family: $primary-font;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 20px;
+                    text-align: center;
+                    color: $primary-accent;
+                    margin-bottom: 2%;
+                  }
+
+                  .container {
+                    text-align: center;
+
+                    .profile-card {
+                      .profile-picture {
+                        border: 1px solid $primary;
+                        border-radius: 50%;
+                        height: 100px;
+                        width: 100px;
+                      }
+
+                      .profile-name {
+                        font-family: $secondary-font;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 17px;
+                        color: $secondary-text;
+                        line-height: 10px;
+                      }
+
+                      .profile-designation {
+                        font-family: $secondary-font;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        color: $secondary-text;
+                      }
+                    }
+                  }
+                }
+
+                .our-her-videos {
+                  .her-video-title {
+                    font-family: $primary-font;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 20px;
+                    text-align: center;
+                    color: $primary-accent;
+                    margin: 3% 0% 2% 0%;
+                  }
+
+                  .container {
+                    .video-wrapper {
+                      border: 2px solid $light-gray-color;
+                      box-shadow: 0 0 10px $light-gray-color;
+                      padding: 2%;
+
+                      .video-card {
+                        background-color: $black;
+                      }
+                    }
+                  }
+                }
+
+                .interested-brands {
+                  margin: 5% 2% 5% 2%;
+
+                  .interested-title {
+                    font-family: $primary-font;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 20px;
+                    text-align: center;
+                    color: $primary-accent;
+                    margin-bottom: 2%;
+                  }
+
+                  .container {
+                    text-align: center;
+
+                    .brand-icon-card {
+                      .brand-logo {
+                        border: 1px solid $primary;
+                        border-radius: 50%;
+                        padding: 5%;
+                        height: 100px;
+                        width: 100px;
+                      }
+
+                      .brand-title {
+                        font-family: $secondary-font;
+                        color: $secondary-text;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 50px;
+                        text-align: center;
+                      }
+                    }
+                  }
+                }
+
+                .quotes-img {
+                  width: 26px;
+                  height: 20px;
+                }
+
+                .who-we-are-statement {
+                  margin-top: 16px;
+                  font-family: $secondary-font;
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 18px;
+                }
+              }
+
+              .people-wrapper {
+                .container {
+                  .row {
+                    .search-box-wrapper {
+                      text-align: center;
+
+                      .people-search {
+                        text-align: center;
+                        border: 1px solid $primary;
+                        border-radius: 50px;
+                        width: 80%;
+                        box-sizing: border-box;
+                        padding: 1%;
+                        margin: 1% 0;
+
+                        &:focus {
+                          box-shadow: 0 0 0 3.2px $primary;
+                          border-color: $primary;
+                          outline: none;
+                        }
+                      }
+                    }
+
+                    .people-content {
+                      text-align: center;
+
+                      .people-card-wrapper {
+                        text-align: center;
+
+                        .people-card {
+                          padding: 2%;
+                          margin: 2%;
+
+                          .profile-picture {
+                            border: 1px solid $primary;
+                            border-radius: 50%;
+                            height: 100px;
+                            width: 100px;
+                          }
+
+                          .profile-name {
+                            font-family: $secondary-font;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 17px;
+                            color: $secondary-text;
+                            line-height: 10px;
+                          }
+
+                          .profile-designation {
+                            font-family: $secondary-font;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            color: $secondary-text;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              .jobs-wrapper {
+                .container {
+                  .row {
+                    .search-box-wrapper {
+                      text-align: center;
+
+                      .jobs-search {
+                        text-align: center;
+                        border: 1px solid $primary;
+                        border-radius: 50px;
+                        width: 80%;
+                        box-sizing: border-box;
+                        padding: 1%;
+                        margin: 1% 0;
+
+                        &:focus {
+                          box-shadow: 0 0 0 3.2px $primary;
+                          border-color: $primary;
+                          outline: none;
+                        }
+                      }
+                    }
+
+                    .jobs-content {
+                      .job-card-wrapper {
+                        .job-card {
+                          padding: 6% 8% 6% 8%;
+                          margin: 2%;
+                          background-color: $secondary;
+
+                          .logo-wrapper {
+                            text-align: right !important;
+                            margin: 2%;
+
+                            .company-logo {
+                              border: 1px solid $primary;
+                              border-radius: 20%;
+                              height: 50px;
+                              width: 50px;
+                            }
+                          }
+
+                          .job-title {
+                            font-family: $primary-font;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 24px;
+                            color: $secondary-text;
+                            line-height: 10px;
+                          }
+
+                          .company-name {
+                            font-family: $secondary-font;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 18px;
+                          }
+
+                          .job-description {
+                            font-family: $secondary-font;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 17px;
+                            line-height: 21px;
+                            color: $posted-date-color;
+                          }
+
+                          .job-location {
+                            font-family: $secondary-font;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            color: $secondary-text;
+                          }
+
+                          .job-posted-date {
+                            font-family: monospace;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 30px;
+                            text-align: right;
+                            color: $posted-date-color;
+                          }
+
+                          &:hover {
+                            box-shadow: 0px 0px 15px 3px $shadow-color;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.add-new-admin-modal {
+  .add-new-admin-lable {
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .name-search-lable {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: $posted-date-color;
+  }
+
+  .candidate-search-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 8px;
+    color: $main-pink-color;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .company-profile-wrapper {
+    .container-fluid {
+      .company-content {
+        .row {
+          .company-menus {
+            padding: 0%;
+
+            .nav {
+              overflow: auto;
+
+              .nav-item {
+                margin: 0 !important;
+
+                .nav-link {
+                  font-size: 15px !important;
+                }
+              }
+            }
+          }
+
+          .company-menu-content {
+            .tab-content {
+              .row {
+                .mission-card {
+                  margin-top: 5%;
+                }
+
+                .diversity-card {
+                  margin-top: 5%;
+                }
+
+                .our-her-leaders {
+                  margin: 5% 0% 5% 0%;
+
+                  .her-leader-title {
+                    margin-bottom: 5% !important;
+                  }
+
+                  .container {
+                    display: block !important;
+
+                    .profile-card {
+                      margin-bottom: 5%;
+                      padding: 3%;
+                      box-shadow: 0 0 0 5px $lighter-box-shadow;
+                    }
+                  }
+                }
+
+                .our-her-videos {
+                  .her-video-title {
+                    margin-bottom: 5% !important;
+                  }
+
+                  .container {
+                    display: block !important;
+                  }
+                }
+
+                .interested-brands {
+                  .interested-title {
+                    margin: 7% 0% 7% 0% !important;
+                  }
+
+                  .container {
+                    overflow: auto;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 3840px) {
+  //For 4K Displays (Ultra HD)
+  .company-wrapper {
+    .container-fluid {
+      .row {
+        .company-left-menus {
+          .nav-item {
+            .right-active-border {
+              margin-left: 73%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.connection-notification-wrapper {
+  max-width: 1166px;
+  margin: auto;
+  .title {
+    h1 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 26px !important;
+      line-height: 28px;
+      color: $purple-900;
+      margin-bottom: 10px !important;
+    }
+  }
+  .connections-card-wrapper {
+    background: $white;
+    box-shadow: 0px 8px 42px $transparent-white;
+    border-radius: 15px;
+    padding: 2px;
+    .head {
+      background: $gray-75;
+      border-radius: 15px;
+      padding: 20px;
+      .tab-group {
+        button,
+        label {
+          margin-right: 54px;
+        }
+        button {
+          min-width: auto !important;
+          width: 110px;
+          height: 40px !important;
+          border-radius: 4px !important;
+          .MuiButton-label {
+            font-weight: 500 !important;
+            font-size: 16px !important;
+            text-transform: capitalize !important;
+          }
+        }
+        label {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          color: $purple-900;
+        }
+      }
+    }
+    .content {
+      padding-top: 30px;
+      padding-left: 18px;
+      padding-right: 18px;
+      .connection-item-wrapper {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        box-shadow: 0px 8px 42px $transparent-white;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        &:hover {
+          background-color: $pink-250;
+        }
+        .user-avatar {
+          width: 50px !important;
+          height: 50px !important;
+        }
+        > div:nth-child(2) {
+          flex-grow: 1;
+          margin-left: 15px;
+          .details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h2,
+            p {
+              margin: 0 !important;
+            }
+            h2 {
+              font-style: normal !important;
+              font-weight: 500 !important;
+              font-size: 14px !important;
+              line-height: 18px !important;
+              color: $purple-900 !important;
+              strong {
+                color: $dark-pink;
+              }
+            }
+            p {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 11px;
+              line-height: 13px;
+              color: $gray-450;
+              max-width: 730px;
+              margin-top: 2px !important;
+            }
+            button:first-child {
+              margin-right: 29px;
+            }
+            button {
+              min-width: auto !important;
+              width: 130px !important;
+              height: 36px !important;
+              border-radius: 4px !important;
+            }
+            button.btn-secondary{
+              background-color: $white;
+            }
+          }
+          .MuiFormControl-root {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+    .pagination {
+      margin-bottom: 10px;
+    }
+  }
+}

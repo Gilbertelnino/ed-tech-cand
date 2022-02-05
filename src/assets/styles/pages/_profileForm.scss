@@ -1,0 +1,601 @@
+.MuiMenu-paper {
+  ul.MuiMenu-list {
+    li.MuiListItem-root {
+      font-size: 13px;
+    }
+  }
+}
+
+.modal-body-container {
+  &.modal-large.video-question-modal {
+    border-radius: 8px;
+    padding: 30px 20px;
+    margin: 0 30px;
+    background-color: $faded-pink;
+
+    @media only screen and (max-width: 767px) {
+      padding: 30px 15px;
+      margin: 0 15px;
+    }
+
+    .video-questions-form {
+      .video-questions-list {
+        height: 470px;
+        overflow-y: auto;
+        padding-right: 4px;
+
+        .MuiFormLabel-root {
+          font-family: $secondary-font;
+          font-size: 18px;
+          line-height: 28px;
+          color: $dark-pink;
+          font-weight: 600;
+        }
+
+        p {
+          font-family: $secondary-font !important;
+          font-size: 16px;
+          margin: 5px 0 18px 0;
+        }
+
+        @media only screen and (max-width: 767px) {
+          height: 320px;
+        }
+
+        @media only screen and (min-device-width: 480px) and (max-device-width: 812px) and (orientation: landscape) {
+          height: 150px;
+        }
+      }
+    }
+
+    .heading-form {
+      color: $black;
+      font-size: 18px;
+      font-family: $primary-font !important;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-align: center;
+      line-height: 24px;
+
+      @media only screen and (max-width: 767px) {
+        font-size: 18px !important;
+      }
+    }
+  }
+}
+
+.modal-body-container {
+  &.youtube-video {
+    background: $shadow-color;
+    outline: none;
+    border-radius: 8px;
+    padding: 20px !important;
+
+    iframe {
+      height: 400px;
+      pointer-events: none;
+    }
+  }
+}
+
+.main-profile-wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  // <----Global styles--->
+  .her-profile {
+    margin-bottom: 20px;
+    .MuiTypography-body1 {
+      font-size: 26px;
+      font-family: $primary-font !important;
+      font-style: normal;
+      line-height: 35px;
+      color: $main-btext-gray-color;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .MuiTypography-caption {
+      font-family: $primary-font !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px !important;
+      color: $gray-450 !important;
+      line-height: 20px !important;
+    }
+    span {
+      color: $dark-pink;
+    }
+  }
+  label {
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    line-height: 18px !important;
+    color: $purple-900 !important;
+    font-family: $primary-font;
+    margin: 0 !important;
+  }
+  label.required::after {
+    color: $dark-pink !important;
+    margin-left: 8px;
+  }
+  .position-collapsible-label {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    .MuiTypography-root {
+      margin: 0;
+      font-weight: 600;
+      font-size: 26px !important;
+      line-height: 28px;
+      color: $purple-900;
+    }
+  }
+  .radio-group {
+    width: 100%;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    label {
+      margin: 0;
+      flex-direction: row;
+      align-items: center;
+      span {
+        font-weight: 500;
+        font-size: 17px !important;
+        line-height: 20px;
+        color: $gray-450;
+        margin: 0 !important;
+      }
+      .MuiTypography-root {
+        margin-left: 8px !important;
+      }
+      .MuiButtonBase-root {
+        padding: 0 !important;
+      }
+    }
+  }
+  .problem-icon {
+    fill: $danger !important;
+  }
+  .error-radio {
+    svg {
+      fill: $danger !important;
+    }
+    span {
+      color: $danger !important;
+    }
+  }
+  // <----/Global styles end--->
+  .info-wrapper {
+    background-color: $white;
+    box-shadow: 0px 8px 42px $transparent-white;
+    padding: 25px 35px 35px 35px;
+    border-radius: 15px;
+    textarea {
+      min-height: 150px;
+      &::placeholder {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: $gray-450;
+        opacity: 1;
+      }
+    }
+    .separator {
+      display: block;
+      height: 1px;
+      background-color: $pink-50;
+      width: 100%;
+      margin: 35px 0;
+      position: relative;
+      &:before,&:after{
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 1px;
+        background-color: $pink-50;
+        display: inline-block;
+        left: -35px;
+      }
+      &:after{
+        right: -35px !important ;
+        left: inherit;
+      }
+    }
+    .add-skill-wrapper{
+      .MuiChip-root{
+        margin: 0 8px 14px 0;
+      }
+    }
+  }
+  .basic-info-wrapper {
+    .user-info-row {
+      display: flex;
+      flex-wrap: wrap;
+      .user-img-col {
+        .user-avatar {
+          cursor: pointer;
+        }
+      }
+      .user-info-col {
+        flex-grow: 1;
+        padding-top: 20px;
+        padding-left: 15px;
+        .user-name {
+          p,
+          input {
+            font-family: $primary-font !important;
+            font-style: normal !important;
+            font-weight: 500 !important;
+            font-size: 22px !important;
+            line-height: 26px !important;
+            color: $purple-900 !important;
+          }
+          svg{
+            cursor: pointer;
+          }
+        }
+        .MuiSvgIcon-root {
+          fill: $dark-pink;
+        }
+        .about {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          color: $gray-450;
+        }
+        .email-phone {
+          p,
+          strong,
+          input {
+            margin: 0;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 19px;
+            font-size: 16px !important;
+          }
+          strong {
+            color: $dark-pink;
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+            font-weight: 700;
+          }
+          p,
+          input {
+            color: $gray-450;
+            margin-left: 10px;
+          }
+          .MuiFormControl-root {
+            width: auto !important;
+            input {
+              font-weight: 500 !important;
+              line-height: 19px !important;
+              font-size: 16px !important;
+            }
+          }
+          svg{
+            cursor: pointer;
+          }
+        }
+        .access-level {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          background: $yellow-100;
+          border-radius: 9px;
+          max-width: 112px;
+          p {
+            // font-family: Lato;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 16px;
+            color: $yellow-200;
+            margin: 0;
+            margin-left: 6px;
+          }
+        }
+        .editable-input {
+          border: 0 !important;
+          border-bottom: 1px solid $gray-450 !important;
+          border-radius: 0 !important;
+          padding: 0 !important;
+          height: auto !important;
+          outline: none !important;
+        }
+      }
+    }
+    .user-job-info-row {
+      margin-top: 40px;
+      .user-job-inputs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        > div {
+          min-width: 346px;
+          input {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+    .user-job-remote-row {
+      margin-top: 21px;
+      display: flex;
+      justify-content: space-between;
+      .MuiFormGroup-root {
+        width: 346px;
+        span {
+          padding-left: 0 !important;
+        }
+      }
+
+      .MuiTypography-root {
+        font-weight: 500;
+        font-size: 17px !important;
+        line-height: 20px;
+        color: $gray-450;
+      }
+    }
+    .user-pv-row {
+      margin-top: 50px;
+    }
+  }
+  .profession-passions-wrapper {
+    > div:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+  .career-differentiators-wrapper {
+    .career-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 26px;
+      h5 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        color: $purple-900;
+        margin: 0;
+      }
+      button {
+        padding: 0;
+        width: 34px;
+        height: 34px;
+        background-color: $dark-pink;
+        margin-left: 15px;
+        svg {
+          fill: $white;
+        }
+      }
+    }
+    .career-differentiators-form-item {
+      margin-top: 20px;
+      .career-differentiators-row {
+        display: flex;
+        justify-content: space-between;
+
+        > div {
+          width: 346px;
+        }
+        div.date-input {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          > div {
+            width: 163px;
+            .MuiFormGroup-root {
+              justify-content: flex-end;
+              span.MuiButtonBase-root {
+                padding: 0 !important;
+                span.MuiIconButton-label {
+                  > svg {
+                    fill: $gray-550;
+                  }
+                }
+              }
+              .Mui-checked {
+                span.MuiIconButton-label {
+                  > svg {
+                    fill: $input-focus-pink !important;
+                  }
+                }
+              }
+              .MuiTypography-root {
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                color: $gray-450;
+              }
+            }
+            .present-label {
+              height: 48px;
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+      > div:nth-child(2) {
+        margin-top: 30px;
+      }
+      .delete-icon-wrapper {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+    .education-form-item {
+      .education-form-row {
+        > div:first-child {
+          width: 724px;
+        }
+      }
+    }
+  }
+  .video-uploader-wrapper {
+    .title {
+      font-weight: 500;
+      color: $purple-900;
+      margin: 0;
+      margin-bottom: 7px;
+    }
+    .video-uploader-row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .video-uploader-col {
+        max-width: 535px;
+        position: relative;
+        video,
+        iframe,
+        img,
+        .box,
+        .video-placeholder-wrapper {
+          border-radius: 6px;
+        }
+        img {
+          height: 100%;
+          width: 100%;
+        }
+        .box {
+          background-color: $pink-150;
+          padding: 25px;
+          p {
+            font-size: 16px !important;
+            margin: 0;
+            color: $gray-450;
+            font-weight: 500;
+            line-height: 28px;
+            text-align: center;
+          }
+          button {
+            margin: 0;
+            margin-top: 32px;
+            width: 330px;
+            margin-left: auto;
+            margin-right: auto;
+            span {
+              text-align: center;
+              font-weight: 700;
+              font-size: 15px !important;
+            }
+          }
+          .bulb-gear-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 17px;
+          }
+        }
+        .button-box {
+          .studio {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            .MuiButtonBase-root {
+              width: 322px;
+              margin-top: 10px !important;
+            }
+          }
+          .group {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 32px;
+            > span {
+              font-size: 16px;
+              color: $gray-310;
+            }
+            .MuiButtonBase-root {
+              width: 212px;
+              border-radius: 8px !important;
+              margin-top: 0 !important;
+            }
+          }
+          p {
+            text-align: center;
+          }
+        }
+        .video-placeholder-wrapper {
+          background-color: $gray-200;
+          width: 100%;
+          min-height: 282px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 535px;
+          svg {
+            font-size: 9.5rem;
+          }
+        }
+      }
+      .instructions {
+        strong {
+          color: $dark-pink;
+          font-size: 16px;
+          line-height: 20px;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          display: block;
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          li {
+            font-family: $primary-font;
+            font-size: 16px;
+            color: $gray-450;
+            font-weight: 500;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            &:not(:last-child) {
+              margin-bottom: 10px;
+            }
+            &::before {
+              content: "\2022";
+              color: $gray-350;
+              font-size: 31px;
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .submit-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    .submit-button {
+      width: 322px;
+    }
+    .save-for-later {
+      padding: 0 !important;
+      background: none !important;
+      color: $purple-900 !important;
+      width: 291px;
+    }
+  }
+}
+
+.inspiration-modal {
+  width: 1161px !important;
+  .modal-body {
+        .content {
+      margin: 0 !important;
+      margin-bottom: 10px !important;
+      font-style: normal !important;
+      font-weight: 500 !important;
+      font-size: 16px !important;
+      line-height: 28px !important;
+      color: $gray-450;
+      padding: 25px 17px 0px 25px;
+      span {
+        color: $dark-pink;
+      }
+    }
+  }
+}

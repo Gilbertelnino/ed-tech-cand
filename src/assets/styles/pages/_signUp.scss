@@ -1,0 +1,378 @@
+.session-container {
+  height: 100%;
+  width: 100%;
+  padding-top: 105px;
+
+  h1 {
+    width: 100%;
+  }
+
+  .gender-radio-wrapper {
+    @media only screen and (max-width: 480px) {
+      display: flex !important;
+    }
+
+    label {
+      &:first-child {
+        margin-left: 0px !important;
+      }
+    }
+
+    .MuiFormControlLabel-label {
+      width: 100%;
+      text-align: center;
+    }
+
+    .gender-radio {
+      border: 1px solid $gray-350;
+      width: 32.7%;
+      height: 40px;
+      border-radius: 4px;
+      box-sizing: border-box;
+      display: inline-flex !important;
+
+      @media only screen and (max-width: 480px) {
+        width: 100%;
+        margin: 0px 0 8px 0;
+      }
+
+      span {
+        font-family: $secondary-font !important;
+        font-size: 14px;
+      }
+
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+
+      &:hover {
+        border-color: $gray-600;
+      }
+    }
+  }
+
+  a:focus,
+  a:hover {
+    text-decoration: underline;
+  }
+
+  form {
+    max-width: 750px;
+    width: 100%;
+
+    .MuiFormHelperText-root {
+      &.Mui-error {
+        margin: 0;
+      }
+    }
+
+    a.forgotPassword {
+      color: $gray-color;
+      font-weight: normal;
+    }
+
+    a.forgotPassword:focus,
+    a.forgotPassword:hover {
+      text-decoration: underline;
+    }
+
+    .main {
+      background-color: $primary-accent;
+      border-radius: 25px 25px 25px 25px;
+      width: 195px;
+      height: 38px;
+      font-size: 18px;
+      color: $white;
+      @extend Button;
+    }
+
+    .LinkedIn {
+      background-color: $linkedin-color;
+      @extend Button;
+    }
+
+    #show-feedback {
+      display: block;
+    }
+  }
+
+  .employer-btn {
+    height: 41px;
+    width: 285px;
+    border: 2px solid $primary-accent;
+    background-color: $white;
+    color: $primary-accent;
+  }
+
+  input {
+    margin: 0;
+    border-color: $black;
+  }
+
+  .privacyAgreement {
+    padding: 0;
+
+    input {
+      max-width: 20px;
+      margin: 5px;
+      height: 16px;
+      padding: 0;
+      margin-top: 2px;
+    }
+  }
+
+  .login-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      margin: 10px;
+      max-width: 449px;
+      height: 42px;
+
+      @media only screen and (min-width: 1000px) {
+        width: 449px;
+      }
+    }
+  }
+
+  .main-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .right-container {
+      height: calc(100vh - 198px);
+      display: none;
+
+      @media only screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .quote-container {
+      color: $secondary-text;
+      width: 450px;
+      height: 450px;
+      flex-grow: 1;
+      margin: 65px;
+      display: none;
+
+      h1 {
+        font-size: 20px;
+        text-align: justify;
+        padding: 0 50px;
+        font-weight: 500;
+      }
+
+      .circle {
+        width: 420px;
+        height: 420px;
+        padding: 10px;
+        background: $faded-pink-bg;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 20px 140px 20px 140px;
+        display: flex;
+        align-items: center;
+      }
+
+      @media only screen and (min-width: 1200px) {
+        display: block;
+      }
+    }
+
+    .inner-main-container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      @media only screen and (min-width: 768px) {
+        width: auto;
+      }
+
+      .message {
+        display: block;
+        padding: 15px;
+        font-size: 20px;
+        color: $secondary-text;
+
+        @media only screen and (min-width: 800px) {
+          padding: 32px 32px 32px 65px;
+        }
+      }
+
+      .toggle-container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+
+        .nav-toggle {
+          display: flex;
+          width: 100%;
+          justify-content: space-evenly;
+          margin-bottom: 15px;
+
+          Button {
+            border: none;
+            color: $black;
+            background-color: $white;
+            padding: 0;
+            margin: 0px;
+            font-size: 25px;
+            border-radius: 5px 5px 0 0;
+
+            @media only screen and (min-width: 768px) {
+              font-size: 28px;
+            }
+          }
+
+          Button:focus,
+          Button:hover {
+            box-shadow: none;
+          }
+
+          .active {
+            border-bottom: 2px solid $primary-accent;
+          }
+        }
+
+        .nav-heading {
+          display: flex;
+          height: 100%;
+
+          Button {
+            margin-left: 10px;
+            width: 80%;
+
+            @media only screen and (min-width: 1200px) {
+              margin-left: 0;
+            }
+
+            @extend Button;
+          }
+
+          .reset {
+            width: 247px;
+            @extend Button;
+          }
+
+          .newPassword {
+            width: 344px;
+            @extend Button;
+          }
+
+          Button:focus,
+          Button:hover {
+            background-color: $white;
+            cursor: default;
+          }
+
+          @extend .nav-toggle;
+        }
+      }
+    }
+  }
+
+  div.row {
+    margin-bottom: 0px;
+
+    @media only screen and (min-width: 700px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .form-group {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    @media only screen and (min-width: 800px) {
+      justify-content: flex-start;
+    }
+  }
+
+  .form-container {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 556px;
+  }
+}
+
+.forgot-password {
+  color: $gray-color;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: $primary-font;
+}
+
+.login-form-container {
+  h2.form-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 25px 0;
+    display: inline-block;
+    border-bottom: 2px solid $dark-pink-hover;
+  }
+
+  .MuiTabs-root {
+    @media only screen and (max-width: 580px) {
+      padding: 0 20px;
+    }
+
+    button {
+      font-size: 24px !important;
+      color: $gray-color;
+
+      @media only screen and (max-width: 580px) {
+        font-size: 18px !important;
+      }
+    }
+
+    button.Mui-selected {
+      color: $primary-nav;
+    }
+  }
+
+  .form-check {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    left: -10px;
+
+    label.form-check-label {
+      padding-top: 12px;
+    }
+  }
+
+  .btn-primary {
+    margin-top: 0 !important;
+  }
+
+  .verify-form {
+    margin-top: 0 !important;
+  }
+}
+
+.forgot-pw-container,
+.verify-code-container {
+  padding: 24px;
+
+  .span-link {
+    font-family: $secondary-font !important;
+    font-size: 15px;
+  }
+}

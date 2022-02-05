@@ -1,0 +1,102 @@
+{
+  "name": "eh-front-end",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "npm-run-all -p sass:build sass:watch dev:js",
+    "dev:js": "env-cmd -e local react-scripts start",
+    "prod:start": "env-cmd -e prod-local react-scripts start",
+    "prod:build": "npm-run-all -p remove:build sass:build prod:build:js",
+    "prod:build:js": "env-cmd -e prod react-scripts build",
+    "sass:watch": "node-sass --output-style=compressed -w src/assets/styles/app.scss src/assets/styles/app.css",
+    "remove:build": "rimraf ./build",
+    "sass:build": "node-sass --output-style=compressed src/assets/styles/app.scss src/assets/styles/app.css",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@reduxjs/toolkit": "^1.4.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "algolia-places-react": "^1.6.1",
+    "array-move": "^4.0.0",
+    "axios": "^0.21.0",
+    "copy-to-clipboard": "^3.3.1",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
+    "env-cmd": "^10.1.0",
+    "html-to-draftjs": "^1.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "material-ui-chip-input": "^2.0.0-beta.2",
+    "material-ui-color-picker": "^3.5.1",
+    "moment": "^2.29.1",
+    "next": "^10.0.1",
+    "node-sass": "4.14.1",
+    "npm-run-all": "^4.1.5",
+    "react": "^17.0.1",
+    "react-contextmenu": "^2.14.0",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^17.0.1",
+    "react-draft-wysiwyg": "^1.14.5",
+    "react-dropzone": "^11.3.2",
+    "react-easy-crop": "^3.5.3",
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^6.13.1",
+    "react-hotjar": "^2.2.1",
+    "react-images-upload": "^1.2.8",
+    "react-input-mask": "^2.0.4",
+    "react-media-recorder": "^1.4.0",
+    "react-player": "^2.6.2",
+    "react-read-more-read-less": "^1.0.7",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.0",
+    "react-select": "^4.3.0",
+    "react-sortable-hoc": "^2.0.0",
+    "react-webcam": "^6.0.0",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0",
+    "redux-saga": "^1.1.3",
+    "rimraf": "^3.0.2",
+    "socket.io-client": "^4.1.2",
+    "typed-redux-saga": "^1.3.1",
+    "typescript": "4.0.3",
+    "video-metadata-thumbnails": "^1.0.22",
+    "web-vitals": "^0.2.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "@types/lodash": "^4.14.170",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.53",
+    "@types/react-custom-scrollbars": "4.0.7",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-helmet": "^6.1.4",
+    "@types/react-input-mask": "^3.0.0",
+    "@types/react-redux": "^7.1.20",
+    "@types/react-router-dom": "^5.1.6"
+  }
+}

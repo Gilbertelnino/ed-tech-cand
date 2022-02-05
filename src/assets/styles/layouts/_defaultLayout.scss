@@ -1,0 +1,475 @@
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a.link{
+    text-decoration: none;
+    color: $input-hover-black;
+    font-weight: 600;
+    &:hover{
+        opacity: 0.6;
+    }
+}
+
+.pink{
+    position: absolute;
+    width: 73px;
+    height: 28px;
+    left: 825px;
+    top: 311px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600px;
+    font-size: 26px;
+    line-height: 28px;
+    color: $dark-pink;
+}
+
+a.pink{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+label{
+    font-size: 15px;
+    color: $purple-900;
+    margin-bottom: 6px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+    margin-top: 0;
+}
+h1{
+    font-size: 32px !important;
+    line-height: 32px;
+}
+h2{
+    font-size: 26px !important;
+    line-height: 26px;
+}
+
+h3{
+    font-size: 24px !important;
+    line-height: 24px;
+}
+
+h4{
+    font-size: 22px !important;
+    line-height: 22px;
+}
+
+h5{
+    font-size: 20px !important;
+    line-height: 20px;
+}
+
+h6{
+    font-size: 18px !important;
+    line-height: 18px;
+}
+
+h2.section-title{
+    margin-bottom: 20px !important;
+}
+
+input{
+    height: 48px !important;
+    box-sizing: border-box !important;
+    border-radius: 8px !important;
+    border-color: $gray-110 !important;
+}
+body .MuiOutlinedInput-notchedOutline {
+    border-color: $gray-110;
+}
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: $pink-hover !important;
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+    border-color: $primary-accent !important;
+    background-color: $bg-hover !important;
+}
+.MuiOutlinedInput-input{
+    padding: 15px 8px;
+}
+.MuiOutlinedInput-inputAdornedStart{
+    padding-left: 8px !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+button.btn{
+    border: 1px solid transparent;
+    height: 48px !important;
+    &:hover{
+        box-shadow: none;
+        opacity: 0.8;
+    }
+    span.MuiButton-label{
+        text-transform: uppercase !important;
+        font-weight: 600 !important;
+        font-size: 15px !important;
+    }
+}
+
+button.btn-primary{
+    border-radius: 8px !important;
+    background-color:$dark-pink !important;
+    color: $white !important;
+    text-transform: uppercase !important;
+    font-size: 15px !important;
+    font-weight: 500;
+    min-width: 165px;
+    &:hover{
+        box-shadow: none;
+        opacity: 0.8;
+    }
+}
+
+.btn-secondary{
+    border-radius: 8px !important;
+    background-color: transparent !important;
+    color: $dark-pink !important;
+    border: 1px solid $dark-pink !important;
+}
+
+button.btn-rounded{
+    border-radius: 30px !important;
+}
+
+.MuiCheckbox-colorPrimary.Mui-checked {
+    color: $dark-pink !important;
+}
+.MuiRadio-colorPrimary.Mui-checked{
+    color: $dark-pink !important;
+}
+.shadow-box{
+    padding: 35px;
+    box-shadow: 0px 8px 42px $transparent-white;
+    border-radius: 15px;
+    background-color: $white;
+}
+
+.bg-pink-circle{
+    height: 800px;
+    width: 800px;
+    background: linear-gradient(180deg, rgba(255, 9, 144, 0.15) 0%, rgba(230, 196, 215, 0.15) 100%), $white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -9;
+    right: -211px;
+    top: -500px;
+
+}
+
+header{
+    margin-bottom: 30px;
+    padding: 30px;
+    nav{
+        display: flex;
+        justify-content: space-between !important;
+        align-items: center;
+        .navBrand{
+            padding: 0;
+        }
+        .nav-link{
+            .nav-item{
+                text-transform: uppercase;
+                margin-left: 50px;
+                font-size: 18px;
+                a{
+                    color: $purple-900;
+                    font-weight: 500;
+                    text-decoration: none;
+                    &:hover{
+                        color: $dark-pink !important;
+                    }
+                    
+                }
+                .active{
+                    color: $dark-pink !important;
+                }
+            }
+        }
+    }
+}
+.footer-container{
+    border-top: 1px solid $gray-110;
+    margin-top: 100px !important;
+        .footer-wrap{
+            margin-top: 50px;
+            ul.social-icon{
+                display: flex;
+                margin-top: 20px;
+                li{
+                    margin-right: 8px;
+                    a{
+                        border-radius: 50%;
+                        width: 48px;
+                        height: 48px;
+                        color: $white;
+                        margin-bottom: 0 !important;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        &:hover{
+                            color: $head-title-color !important;
+                        }
+                    }
+                    a.fb{
+                        background-color: $fb-bg;
+                    }
+                    a.tw{
+                        background-color: $tw-bg;
+                    }
+                    a.ig{
+                        background-color: $ig-bg;
+                    }
+                }
+            }
+            .f-column{
+                h5{
+                    color: $dark-pink;
+                }
+                ul{
+                    li{
+                        a{
+                            font-size: 16px;
+                            margin-bottom: 15px;
+                            display: inline-flex;
+                            font-weight: 500;
+                            &:hover{
+                                color: $dark-pink;
+                            }
+                        }
+                    }
+                }
+                button{
+                    margin-top: 15px;
+                }
+            }
+        }
+}
+.footer-mini{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 30px 0;
+    margin-top: 40px;
+    border-top: 1px solid $border-color;
+    .f-mini-left{
+        p{
+            font-size: 14px;
+            margin: 0;
+        }
+        span{
+            color: $dark-pink;
+        }
+    }
+    .f-mini-right{
+        display: flex;
+        a{
+            color: $input-hover-black;
+            font-weight: 600;
+            font-size: 16px;
+            &:hover{
+                color: $dark-pink;
+            }
+        }
+        a.tu-link{
+            margin-right: 50px;
+        }
+    }
+}
+
+.MuiDialog-root{
+    .MuiDialog-container{ 
+        .MuiPaper-root{
+            box-shadow: 0px 8px 42px $transparent-white !important;
+            border-radius: 8px;
+            margin: 20px !important;
+            .MuiDialogTitle-root{
+                padding: 25px !important;
+                background-color: $white !important;
+                border-bottom: 1px solid $border-color;
+                h2{
+                    font-size: 22px !important;
+                    line-height: 22px !important;
+                    font-weight: 600;
+                }
+            }
+            .MuiDialogContent-root{
+                padding: 25px !important;
+            }
+            .MuiDialogActions-root{
+                padding: 30px !important;
+                display: flex;
+                justify-content: center;
+                .btn{
+                    width: 165px !important;
+                    margin: 0 12px !important;
+                }
+            }
+        }
+    }
+}
+
+
+.company-container{
+    display: flex;
+    .sidebar-wrap{
+        width: 260px;
+        box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06) !important;
+        height: 100vh;
+        border-right: 1px solid $green-30;
+        background-color: $white;
+        box-sizing: border-box;
+        position: relative;
+        .sidebar-logo{
+            padding: 8px 16px;
+            border-bottom: 1px solid $gray-110;
+            svg{
+                width: 225px;
+            }
+        }
+        .sidebar-menu-wrap{
+            height: calc(100vh - 77px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            ul.side-menu{
+                li{
+                    a{
+                        padding: 12px 22px;
+                        border: 1px solid transparent;
+                        color: $gray-550;
+                        font-weight: 500;
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        margin: 10px;
+                        border-radius: 4px;
+                        svg{
+                            margin-right: 18px;
+                            width: 28px;
+                            height: 25px;
+                        }
+                        &:hover{
+                            border-color: $gray-110;
+                            box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
+                        }
+                    } 
+                    .active{
+                        border-color: $gray-110;
+                        box-shadow:0px 2px 48px rgba(0, 0, 0, 0.06);
+                    }
+                    a.dashboard-menu{
+                        svg{
+                            width: 28px;
+                            height: 28px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .company-body{
+        width: calc(100% - 260px);
+        background-color: $gray-120;
+        .company-header-wrap {
+            padding: 30px;
+            height: 77px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            .navbar-nav{
+                display: flex;
+                flex-direction: row;
+                .nav-item{
+                    a{
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        font-weight: 500;
+                        margin-right: 50px;
+                    }
+                    &:hover{
+                        color: $dark-pink !important;
+                    }
+                    .active{
+                        color: $dark-pink !important;
+                    }
+                }
+            }
+        }
+        .company-body-wrapper{
+            padding: 0px 30px;
+            .inner-tab-container{
+                .custom-tab-wrapper{
+                    box-shadow: $transparent-white;
+                    border: 1px solid $gray-110;
+                    border-radius: 4px;
+                    background-color: $white;
+                    display: flex;
+                    justify-content: space-between;
+                    // margin: 0px 35px 35px 35px;
+                    padding: 15px;                    
+                    .custom-tab-left{
+                        ul.tab-menu {
+                            display: flex;
+                            li{
+                                button{
+                                    width: 120px;
+                                    min-width: 120px;
+                                    margin-right: 15px;
+                                    background-color: transparent !important;
+                                    border-color: transparent;
+                                    color: $black !important;
+                                    span.MuiButton-label {
+                                        text-transform: capitalize;
+                                    }
+                                }
+                                button.active{
+                                    background: $dark-pink !important;
+                                    color: $white !important;
+                                }
+                            }
+                        }
+                    }
+                    .custom-tab-right {
+                        display: flex;
+                        .btn{
+                            width: 95px !important;
+                            min-width: 95px;
+                        }
+                        .publish-button, .save-button{
+                            margin-left: 10px;
+                        }
+                        .preview-btn{
+                            background-color: $white !important;
+                            color: $dark-pink !important;
+                        }
+                        .custom-search-wrapper{
+                            margin-right: 15px;
+                            min-width: 300px;
+                            svg{
+                                fill: $dark-pink !important;
+                                margin-right: 12px;
+                            }
+                            fieldset.MuiOutlinedInput-notchedOutline {
+                                border-color: $gray-110;
+                            }                        
+                        }
+                    }
+                }
+                .company-body-content{
+                    margin: 30px;
+                    height: calc(100vh - 137px);
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+}

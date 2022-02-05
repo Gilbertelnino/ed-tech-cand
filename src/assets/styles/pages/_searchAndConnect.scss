@@ -1,0 +1,856 @@
+.search-result-container {
+  height: auto;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: $gray-75;
+  border-radius: 14px;
+  @media only screen and (max-width: 1280px) {
+    padding: 40px 20px 0 20px;
+  }
+  .search-result-filters {
+    display: flex;
+    @media only screen and (max-width: 960px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .search-result-filters-button {
+      border: 1.5px solid $primary-accent;
+      min-width: 150px;
+      font-size: 16px;
+      height: 40px;
+      display: flex;
+      margin-right: 20px;
+      font-family: $secondary-font !important;
+      background: $white;
+      border: 1px solid $pink-75;
+      box-sizing: border-box;
+      border-radius: 6px;
+      &::before,
+      &::after {
+        display: none !important;
+      }
+      .MuiIconButton-label {
+        justify-content: space-between;
+        font-family: $secondary-font !important;
+      }
+      .MuiSelect-select {
+        padding: 15px;
+        font-weight: 600;
+        &:focus{
+          background-color: transparent;
+        }
+      }
+      svg{
+        color: $primary-accent;
+        margin-right: 3px;
+      }
+      @media only screen and (max-width: 812px) {
+        margin-right: 8px;
+        min-width: 130px;
+      }
+      @media only screen and (max-width: 600px) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .search-result-create-alert {
+    display: flex;
+    justify-content: flex-end;
+    @media only screen and (max-width: 960px) {
+      justify-content: center;
+    }
+    .search-result-create-alert-button {
+      height: 40px !important;
+      max-width: 160px;
+      .MuiButton-label {
+        font-family: $secondary-font !important;
+        font-weight: 700 !important;
+        font-size: 13px !important;
+
+      }
+    }
+  }
+  .search-result-countText {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    width: 100%;
+    text-align: center;
+    color:$purple-900;
+  }
+}
+
+.search-result-grid {
+  min-height: calc(100vh - 558px);
+  padding: 30px 15px;
+  .search-result-profile-card-wrap{
+    .search-result-profle-card{ 
+      .profle-card-top{
+        .profle-card-top-img {
+          .profile-picture {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  .search-result-profle-card-container {
+    .search-result-profle-card {
+      background-color: $white;
+      box-shadow: 0px 8px 42px 0px $transparent-white;
+      padding: 20px;
+      border-radius: 8px;
+      height: 217px;
+      &:hover {
+        box-shadow: 0px 0px 11px $ligh-box-shadow;
+      }
+      @media only screen and (max-width: 575px) {
+        padding: 15px;
+      }
+      .profle-card-top {
+        display: flex;
+        align-items: flex-start;
+        min-height: 60px;
+        max-height: 60px;
+        @media only screen and (max-width: 480px) {
+          flex-wrap: wrap;
+        }
+        .profle-card-top-info {
+          padding-left: 10px;
+          margin-top: 10px;
+          h3 {
+            font-size: 15px !important;
+            overflow: hidden;
+            font-weight: 500;
+            margin-bottom: 0px;
+            @media only screen and (max-width: 992px) {
+              font-size: 18px;
+            }
+            @media only screen and (max-width: 600px) {
+              min-height: initial;
+            }
+          }
+          p {
+            font-size: 12px;
+            font-family: work sans-serif;
+            margin-top: 0px;
+            @media only screen and (max-width: 600px) {
+              min-height: initial;
+              height: initial;
+            }
+          }
+          @media only screen and (max-width: 480px) {
+            margin-bottom: 20px;
+            margin-top: 0;
+            width: 100%;
+          }
+        }
+        .profle-card-top-img {
+          .profile-picture {
+            position: relative;
+            text-align: center;
+            margin: 0 auto;
+            padding: 8px;
+            border-radius: 50%;
+
+            .profile-img {
+              overflow: hidden;
+              border-radius: 50%;
+              position: relative;
+              z-index: 1;
+
+              .user-avatar {
+                height: 50px !important;
+                width: 50px !important;
+                margin: 0 auto;
+                @media only screen and (min-width: 768px) and (max-width: 992px) {
+                  height: 105px !important;
+                  width: 105px !important;
+                }
+              }
+            }
+
+            .play-video-text {
+              position: absolute;
+              top: -13px;
+              right: -25px;
+              background-color: $faded-pink;
+              @media only screen and (max-width: 580px) {
+                top: -18px;
+                right: 0px;
+              }
+              @media only screen and (min-width: 768px) and (max-width: 992px) {
+                right: 8px;
+              }
+              svg{
+                @media only screen and (max-width: 1024px) {
+                  width: 100% !important;
+                }
+              }
+            }
+
+            .video-play-btn {
+              position: absolute;
+              right: 4px;
+              bottom: -2px;
+              cursor: pointer;
+              z-index: 1;
+              svg {
+                height: 25px;
+                width: 25px;
+                fill: $dark-pink !important;
+
+                @media only screen and (max-width: 992px) {
+                  height: 20px;
+                  width: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .profle-card-middle {
+        p {
+          font-family: work sans-serif;
+          color: $gray-color;
+          font-family: Work Sans;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 18px;
+          letter-spacing: 0em;
+          text-align: left;
+          min-height: 83px;
+          max-height: 83px;
+          overflow: hidden;
+          @media only screen and (max-width: 600px) {
+            min-height: initial;
+            height: initial;
+          }
+        }
+      }
+      .profle-job-card-bottom {
+        text-align: right;
+        font-size: 14px;
+      }
+      .profle-card-bottom {
+        display: flex;
+        justify-content: space-between;
+        @media only screen and (max-width: 480px) {
+          flex-wrap: wrap;
+        }
+        .btn {
+          width: 150px;
+          @media only screen and (max-width: 575px) {
+            width: 145px;
+          }
+        }
+        .profle-card-quickview-button {
+          border-color: $gray-color !important;
+          font-size: 16px;
+          margin-right: 10px;
+          .MuiButton-label {
+            text-transform: none;
+            color: $gray-color !important;
+          }
+          &:hover {
+            background-color: $gray-350 !important;
+          }
+          @media only screen and (max-width: 480px) {
+            margin-bottom: 15px;
+          }
+        }
+        .profle-card-connect-button {
+          background-color: $primary-accent !important;
+          .MuiButton-label {
+            text-transform: none;
+            font-weight: 400;
+          }
+          &:hover {
+            background-color: $dark-pink !important;
+          }
+        }
+        .profle-card-connect-button-disabled {
+          background-color: $gray-600 !important;
+          .MuiButton-label {
+            text-transform: none;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+.search-result-pagination {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.MuiGridList-root {
+  margin: 0 !important;
+}
+.search-main-container {
+  background: $white;
+  box-shadow: 0px 8px 42px 0px $transparent-white;
+  border-radius: 15px;
+  padding: 3px !important;
+}
+
+.invitation-modal-wrapper {
+  .MuiDialog-paper {
+    border-radius: 16px;
+    background-color: $white;
+  }
+  .invitation-modal-header {
+    padding: 15px 25px;
+    background-color: $white !important;
+    .MuiTypography-root {
+      text-align: left;
+      line-height: 20px;
+      font-family: $primary-font !important;
+      font-weight: 600;
+      .MuiIconButton-root {
+        position: absolute;
+        right: 0;
+        top: 14px;
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .invitation-modal-content {
+    padding: 15px 25px 0 25px;
+    @media only screen and (max-width: 580px) {
+      padding: 20px 15px;
+    }
+    .MuiDialog-container {
+      .MuiDialog-paperWidthSm {
+        max-width: 600px;
+        min-width: 600px;
+      }
+    }
+    .main-invitation-content {
+      p.p-text{
+        padding-left: 25px !important;
+      }
+      .MuiGrid-grid-sm-2 {
+        text-align: left;
+        svg {
+          width: 45px;
+          height: 45px;
+        }
+      }
+      
+    }
+    p {
+      margin: 0 !important;
+      text-align: left;
+      color: $black;
+      font-family: $secondary-font !important;
+      font-size: 18px;
+    }
+    
+    .main-invitation-content-addNote {
+      display: flex;
+      justify-content: center;
+      .add-commment-textbox-container {
+        width: 100%;
+        margin-top: 15px;
+        .add-commment-textbox {
+          width: 100%;
+          .MuiInputBase-root {
+            input {
+              background-color: $white;
+              padding: 12px 6px;
+            }
+            .MuiOutlinedInput-notchedOutline {
+              border: 1.5px solid $primary-accent;
+              border-radius: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .invitation-modal-footer {
+    background-color: $white;
+    padding: 15px;
+
+    button {
+      border-radius: 4px;
+      min-width: 160px;
+      height: 40px;
+      @media only screen and (max-width: 420px) {
+        min-width: 108px;
+      }
+      .MuiButton-label {
+        font-size: 15px;
+        text-transform: none;
+        font-weight: 400;
+        font-family: $secondary-font !important;
+      }
+    }
+    .profle-card-connect-button {
+      color: $white;
+      background-color: $dark-pink;
+    }
+    .profle-card-quickview-button {
+      color: $dark-pink;
+      border: 2px solid $dark-pink;
+    }
+  }
+}
+
+.alert-modal-wrapper {
+  .MuiDialog-paper {
+    border-radius: 8px;
+  }
+  .MuiDialog-root .MuiDialog-container .MuiPaper-root .MuiDialogTitle-root {
+    height: 30px !important;
+  }
+  .alert-modal-header {
+    padding: 15px 25px;
+    background-color: $white !important;
+    .MuiTypography-root {
+      text-align: center;
+      line-height: 20px;
+      font-family: $primary-font !important;
+      font-weight: 600;
+      text-align: left;
+      @media only screen and (max-width: 767px) {
+        font-size: 16px;
+      }
+      .MuiIconButton-root {
+        position: absolute;
+        right: 0;
+        top: 0px;
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .alert-modal-content {
+    background-color: $white;
+    padding: 15px 25px;
+    @media only screen and (max-width: 767px) {
+      padding: 15px;
+    }
+    .MuiDialog-container {
+      .MuiDialog-paperWidthSm {
+        max-width: 600px;
+        min-width: 600px;
+      }
+    }
+    .main-alert-content {
+      display: flex;
+      justify-content: center;
+      h3 {
+        margin: 0;
+        font-size: 18px;
+        font-family: $secondary-font !important;
+        @media only screen and (max-width: 767px) {
+          font-size: 16px;
+        }
+      }
+      .alert-dropdown-container {
+        width: 100%;
+        h4 {
+          margin: 15px 0 5px 0;
+          font-size: 18px;
+          font-family: $secondary-font !important;
+          @media only screen and (max-width: 767px) {
+            font-size: 14px;
+          }
+        }
+        .MuiSelect-select {
+          padding: 10px 12px;
+          border-radius: 50px;
+          background-color: $white;
+        }
+        .get-receive-dropdown {
+          width: 60%;
+          .MuiInputBase-root {
+            height: 40px;
+            .MuiOutlinedInput-notchedOutline {
+              border: 2px solid $primary-accent;
+              border-radius: 25px;
+            }
+          }
+        }
+        .get-notification-dropdown {
+          width: 90%;
+          .MuiInputBase-root {
+            height: 40px;
+            .MuiOutlinedInput-notchedOutline {
+              border: 2px solid $primary-accent;
+              border-radius: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .invitation-modal-footer {
+    background-color: $white;
+    padding: 15px;
+
+    .btn {
+      border-radius: 50px;
+      min-width: 160px;
+      width: 160px;
+      height: 40px;
+      @media only screen and (max-width: 420px) {
+        min-width: 108px;
+      }
+      .MuiButton-label {
+        font-size: 15px;
+        text-transform: none;
+        font-weight: 400;
+      }
+    }
+    .profle-card-connect-button {
+      color: $white;
+      background-color: $primary-accent;
+    }
+    .profle-card-quickview-button {
+      color: $primary-accent;
+      border: 2px solid $primary-accent;
+    }
+  }
+}
+
+.search-profile-quick-view {
+
+  .MuiDialog-paper {
+    margin: 32px;
+    position: relative;
+    overflow-y: auto;
+    min-width: 1200px;
+    border-radius: 12px;
+    @media only screen and (max-width: 1200px) {
+      min-width: 95%;
+    }
+  }
+
+  .candidateModalHeader {
+    justify-content: flex-end;
+    display: flex;
+    background-color: $faded-pink !important;
+    padding: 20px 60px;
+    border: none !important;
+    .share-profile-btn {
+      font-size: 16px;
+      color: $posted-date-color;
+      padding: 0 !important;
+      svg {
+        height: 20px;
+        width: 18px;
+        margin-right: 6px;
+      }
+      &:hover {
+        background-color: transparent;
+        color: $secondary-text;
+      }
+      .MuiTouchRipple-root {
+        display: none !important;
+      }
+    }
+    .close-btn {
+      padding: 0 20px;
+      position: absolute;
+      right: -5px;
+      top: 15px;
+      &:hover {
+        background-color: transparent;
+      }
+      .MuiTouchRipple-root {
+        display: none !important;
+      }
+    }
+  }
+  .modal-content {
+    background-color: $white !important;
+    @media only screen and (max-width: 1024px) {
+      padding: 0 20px 30px 20px;
+    }
+    @media only screen and (max-width: 375px) {
+      padding: 0 15px 20px 15px;
+    }
+    &::-webkit-scrollbar {
+      width: 7px;
+    }
+
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 0px $black;
+      border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.149);
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+    .MuiGrid-container {
+      align-items: flex-start;
+      .profile-content-left {
+        border-radius: 10px;
+        background-color: $white;
+        padding: 15px 20px;
+        box-shadow: 0px 8px 42px $transparent-white !important;
+        @media only screen and (max-width: 992px) {
+          padding: 15px;
+        }
+        .profile-picture {
+          position: relative;
+          text-align: center;
+          margin: 15px auto;
+          padding: 8px;
+          border-radius: 50%;
+          height: 100px !important;
+          width: 100px !important;
+          background-color: $primary-pink;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .profile-img {
+            overflow: hidden;
+            border-radius: 50%;
+            position: relative;
+            z-index: 1;
+
+            .user-avatar {
+              height: 98px !important;
+              width: 98px !important;
+              @media only screen and (min-width: 768px) and (max-width: 992px) {
+                height: 109px !important;
+                width: 109px !important;
+              }
+            }
+          }
+
+          .play-video-text {
+            position: absolute;
+            top: -18px;
+            right: 13px;
+            background-color: $white;
+            svg {
+              width: 102px !important;
+              @media only screen and (min-width: 768px) and (max-width: 992px) {
+                width: 100% !important;
+              }
+            }
+            @media only screen and (min-width: 768px) and (max-width: 992px) {
+              right: 6px;
+            }
+          }
+
+          .video-play-btn {
+            position: absolute;
+            right: -6px;
+            bottom: -14px;
+            cursor: pointer;
+            z-index: 1;
+            svg {
+              height: 48px;
+              width: 45px;
+              fill: $dark-pink !important;
+
+              @media only screen and (max-width: 992px) {
+                height: 45px;
+                width: 45px;
+              }
+            }
+          }
+        }
+        h4 {
+          font-size: 20px !important;
+          margin: 0 0 15px 0;
+          text-transform: capitalize;
+        }
+        h3 {
+          color: $primary-accent;
+          font-weight: 600;
+          margin: 15px 15px 5px 0;
+          font-family: $primary-font;
+        }
+        .profile-btn-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .btn {
+            @media only screen and (max-width: 767px) {
+              width: 100% !important;
+              padding: 12px 6px;
+            }
+            .MuiIconButton-label {
+              font-size: 15px;
+              text-transform: none;
+              font-weight: 400;
+              font-family: $secondary-font !important;
+              svg {
+                margin-right: 10px;
+                @media only screen and (max-width: 767px) {
+                  margin-right: 4px;
+                }
+              }
+            }
+          }
+          .downloadResumeButton {
+            color: $white;
+            background-color: $dark-pink;
+            margin-bottom: 20px;
+          }
+          .sendEmailButton {
+            color: $primary-accent;
+            border: 2px solid $primary-accent;
+            &:hover {
+              .MuiIconButton-label {
+                color: $white;
+              }
+            }
+          }
+        }
+        p {
+          font-family: $secondary-font !important;
+        }
+        .skill-container {
+          margin-top: 30px !important;
+          h3 {
+            display: flex;
+            margin: 0 0 10px 0;
+            font-size: 18px !important;
+            @media only screen and (max-width: 600px) {
+              font-size: 18px;
+            }
+          }
+          .skill-btn-wrap {
+            margin: 0 -6px;
+            text-align: left;
+            .skill-btn {
+              background-color: $tertiary;
+              color: $gray-color;
+              margin: 6px;
+              border-radius: 5px;
+              .MuiButton-label {
+                font-size: 12px;
+                text-transform: none;
+                font-weight: 300;
+                font-family: $secondary-font !important;
+              }
+            }
+          }
+        }
+      }
+      .profile-content-right {
+        @media only screen and (max-width: 600px) {
+          margin-top: 15px;
+          width: 100%;
+        }
+        .accordion-container {
+          border-radius: 10px;
+          background-color: $white;
+          margin-top: 0 !important;
+          @media only screen and (max-width: 600px) {
+            margin: 0 0 15px 0px;
+          }
+          h3 {
+            color: $primary-accent;
+            font-weight: 600;
+            font-size: 18px !important;
+            margin: 15px;
+            @media only screen and (max-width: 600px) {
+              font-size: 18px;
+            }
+          }
+          .MuiAccordionSummary-content {
+            margin: 0;
+            h3{
+              @media only screen and (max-width: 992px) {
+                margin-left: 0 !important;
+                text-align: left;
+              }
+            }
+          }
+          .MuiAccordionSummary-expandIcon {
+            svg {
+              fill: $gray-350;
+            }
+          }
+          .accordion-details {
+            display: block;
+            .accordion-details-left {
+              display: flex;
+              justify-content: center;
+              @media only screen and (max-width: 420px) {
+                height: 80px;
+              }
+              .user-avatar-sm {
+                height: 60px !important;
+                width: 60px !important;
+              }
+            }
+            .accordion-details-right {
+              text-align: left;
+              padding-left: 0px;
+              font-family: $secondary-font !important;
+              @media only screen and (max-width: 420px) {
+                padding-left: 0;
+              }
+              h3 {
+                margin: 0 4px;
+                font-weight: 600;
+                font-family: $secondary-font !important;
+                font-size: 16px !important;
+                text-transform: capitalize;
+                padding-bottom: 3px;
+                @media only screen and (max-width: 600px) {
+                  font-size: 16px;
+                }
+              }
+              p {
+                margin: 0 4px;
+                font-size: 14px;
+                font-family: $secondary-font !important;
+                @media only screen and (max-width: 600px) {
+                  font-size: 14px;
+                }
+                &:last-child{
+                  font-size: 12px !important;
+                }
+              }
+              hr {
+                height: 1px;
+                width: 100%;
+                background-color: $gray-120;
+                border: none;
+                margin: 18px 0;
+              }
+              
+            }
+          }
+          &::before {
+            display: none;
+          }
+          .MuiAccordionDetails-root {
+            font-family: $secondary-font !important;
+          }
+          .MuiAccordionSummary-root {
+            padding: 0px 0px !important;
+            .MuiIconButton-edgeEnd {
+              margin-right: -2px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .MuiDialog-paperScrollPaper {
+    overflow-x: hidden;
+  }
+}

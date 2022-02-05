@@ -1,0 +1,100 @@
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+.breakLines {
+  background-color: $main-pink-color;
+  width: 500px;
+}
+
+.paragraphs {
+  text-align: center;
+}
+
+.ButtonTest {
+  text-align: center;
+  color: yellow !important;
+}
+
+.hr-theme-slash-2 {
+  display: flex;
+  flex-grow: 1;
+
+  a.hr-line {
+    width: 100%;
+    margin: 15px;
+    border-bottom: 1px solid $main-pink-color;
+  }
+
+  .hr-icon {
+    position: relative;
+    top: 3px;
+    color: $main-pink-color;
+  }
+
+  .candidateField {
+    float: right;
+  }
+}
+
+.IndicatorAssessment {
+  color: $main-pink-color;
+  text-decoration: underline;
+}
+
+.bodyResume {
+  padding: 30px;
+}
+
+.resumeLines {
+  background-color: $main-pink-color;
+}
+
+.bulletPoint {
+  color: $main-pink-color;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.md-avatar {
+  padding: 20px;
+}
+
+.topResume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bodyVideoInstructions {
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: justify;
+}
+
+.unorderedListCircle {
+  list-style-type: circle;
+}
+
+.buttonLikeLink {
+  background: none;
+  color: $main-pink-color;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+  /*border is optional*/
+  border-bottom: 1px solid $main-pink-color;
+  cursor: pointer;
+}

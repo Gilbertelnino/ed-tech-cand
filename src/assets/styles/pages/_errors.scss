@@ -1,0 +1,117 @@
+.oops {
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 28px;
+    color: $dark-pink;
+}
+
+.notFound-error-message{
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: $gray-450;
+}
+
+.notFound-btn{
+    background: $dark-pink;
+    border: 1px solid $dark-pink;
+    border-radius: 4px;
+}
+
+.notFound-btn{
+    min-width: 205px !important;
+    text-decoration: none !important;
+}
+
+.notFound-btn{
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $white;
+}
+
+.notFound-link{
+    text-decoration: none !important;
+}
+
+.internal-error-msg{
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 28px;
+    color: $dark-pink;
+}
+
+.internal-error-link{
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $dark-pink;
+}
+
+.internal-error-body{
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: $gray-450;
+}
+
+.unauthorized-error-msg{
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 28px;
+    color:  $dark-pink;
+}
+
+.unauthorized-error-btn{
+    min-width: 205px !important;
+}
+
+.unauthorized-error-body{
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: $gray-450;
+}
+
+.unauthorized-error-btn{
+    background:  $dark-pink;
+    border: 1px solid  $dark-pink;
+    border-radius: 4px;
+    text-align: center;
+}
+.unauthorized-error-btn{
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $white;
+}
+
+.unauthorized-error-link{
+    font-family: $primary-font;
+    font-style: normal;
+    width: 200px;
+    font-weight: 500px;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 40px;
+    text-decoration: none !important;
+    color: $dark-pink;
+}
